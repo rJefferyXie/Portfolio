@@ -1,0 +1,30 @@
+.Navbar {
+    height: 80px;
+    width: 100vw;
+}
+
+.Navbar-logo {
+    height: 100%;
+    width: 240px;
+    font-size: 1.8rem;
+    background-color: transparent;
+    border: none;
+    margin: auto;
+    color: rgb(137, 194, 227);
+}
+
+.Navbar-container {
+    height: 100%;
+    width: 100%;
+}
+
+.Navbar-button {
+    height: 100%;
+    width: 80px;
+    background-color: transparent;
+    border: none;
+}   
+
+.Navbar-button:hover {
+    background-color: rgba(255, 160, 122, 0.5);
+}
