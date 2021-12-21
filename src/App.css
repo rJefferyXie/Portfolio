@@ -1,9 +1,3 @@
-/*
-Sky Blue --> #89ABE3FF
-Amethyst --> #C1C8E4
-Violet --> #8860D0
-*/
-
 * {
     box-sizing: border-box;
     font-family: 'Kumbh Sans', sans-serif;
@@ -11,6 +5,7 @@ Violet --> #8860D0
     margin: 0;
     padding: 0;
     font-size: 1rem;
+    user-select: none;
 }
 
 .flex {
@@ -26,15 +21,32 @@ Violet --> #8860D0
     align-items: center;
 }
 
+.Text-line {
+    width: 90%;
+    height: 100%;
+}
+
 a, button {
     cursor: pointer;
     outline: none;
     text-decoration: none;
+    color: white;
     text-shadow: 
     0 0 1px rgba(255,255,255,0.8), 
-    1px 1px 1px rgba(0,0,0,0.2);
+    2px 2px 2px rgba(0,0,0,0.4);
+    font-size: 1.2rem;
 }
 
 p {
-    color: #89ABE3FF;
+    color: #ffffff;
+    text-shadow: 
+    0 0 1px rgba(255, 255, 255, 0.8),
+    1px 1px 1px rgba(0,0,0,0.4);
+}
+
+span {
+    color: rgba(68, 218, 88, 0.5);
+    text-shadow: 
+    0 0 1px rgba(68, 218, 88, 0.8),
+    1px 1px 1px rgba(0,0,0,0.4);
 }
