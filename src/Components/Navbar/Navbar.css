@@ -1,4 +1,5 @@
 .Navbar {
+    position: fixed;
     height: 80px;
     width: 100vw;
 }
@@ -9,8 +10,10 @@
     font-size: 1.8rem;
     background-color: transparent;
     border: none;
-    margin: auto;
-    color: rgb(137, 194, 227);
+    color: white;
+    text-shadow: 
+        0 0 2px rgba(255,255,255,0.8), 
+        2px 2px 2px rgba(0,0,0,0.4);
 }
 
 .Navbar-container {
@@ -19,12 +22,13 @@
 }
 
 .Navbar-button {
-    height: 100%;
-    width: 80px;
+    height: 60px;
+    width: 100px;
+    border-radius: 8px;
     background-color: transparent;
     border: none;
 }   
 
 .Navbar-button:hover {
-    background-color: rgba(255, 160, 122, 0.5);
+    background-color: rgba(240, 240, 240, 0.5);
 }
