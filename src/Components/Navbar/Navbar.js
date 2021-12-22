@@ -1,29 +1,35 @@
 import './Navbar.css';
 
 const Navbar = () => {
-    const menu = document.querySelector(".Mobile-menu");
-    const menuLinks = document.querySelector('.Navbar-container');
 
-    // Display Mobile Menu
-    const mobileMenu = () => {
-        menu.classList.toggle('is-active');
-        menuLinks.classList.toggle('active');
+    // Switch to mobile menu
+    const MobileMenu = () => {
+        document.querySelector("#Mobile-menu").classList.toggle('is-active');
+        document.querySelector('#Navbar-container').classList.toggle('active');
     };
 
+    const ScrollTo = (id) => {
+        let section = document.querySelector(id);
+        section.scrollIntoView({ 
+            behavior: "smooth",
+            block: "center"
+        });
+    }
+
     return (
-        <nav className="Navbar flex">
-            <button className="Navbar-logo">Jeffery Xie</button>
-            <div className="Mobile-menu" onClick={mobileMenu}>
+        <nav id="Navbar" className="flex">
+            <button id="Navbar-logo" onClick={() => ScrollTo("#Hero")}>Jeffery Xie</button>
+            <div id="Mobile-menu" onClick={MobileMenu}>
                 <span className="bar"></span> 
                 <span className="bar"></span>
                 <span className="bar"></span>
             </div>
-            <div className="Navbar-container flex" onClick={mobileMenu}>
-                <button className="Navbar-button">About</button>
-                <button className="Navbar-button">Projects</button>
-                <button className="Navbar-button">Skills</button>
-                <button className="Navbar-button">Contact</button>
-                <button className="Navbar-button Resume">Resume</button>
+            <div id="Navbar-container" className="flex" onClick={MobileMenu}>
+                <button onClick={() => ScrollTo("#Projects")} className="Navbar-button">Projects</button>
+                <button onClick={() => ScrollTo("#Skills")} className="Navbar-button">Skills</button>
+                <button onClick={() => ScrollTo("#About")} className="Navbar-button">About</button>
+                <button onClick={() => ScrollTo("#Contact")} className="Navbar-button">Contact</button>
+                <button id="Resume" className="Navbar-button">Resume</button>
             </div>
         </nav>
     );
