@@ -32,7 +32,7 @@
 }   
 
 #Resume {
-    background-color: #96b6df;
+    background-color: #a5c4ec;
     width: 110px;
 }
 
@@ -59,7 +59,7 @@
     }
 
     #Navbar-container.active {
-        background: #96b6df;
+        background: #a5c4ec;
         top: 100%;
         transition: all 0.5s ease;
         z-index: 99;

@@ -2,8 +2,10 @@ import './Skills.css';
 
 const Skills = () => {
     return (
-        <div id="Skills">
-            <p>Skills</p>
+        <div id="Skills" className="flex">
+            <div className="Page-container">
+                <p>Skills</p>
+            </div>
         </div>
     )
 }
