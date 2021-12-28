@@ -36,7 +36,7 @@ body {
     text-align: center;
 }
 
-a, button {
+button {
     cursor: pointer;
     outline: none;
     text-decoration: none;
@@ -47,14 +47,15 @@ a, button {
     font-size: 1.3rem;
 }
 
-p {
+.Shadow-p {
     color: #ffffff;
     text-shadow: 
     0 0 1px rgba(255, 255, 255, 0.8),
     1px 1px 1px rgba(0,0,0,0.4);
+    width: 95%;
 }
 
-span {
+.Shadow-span {
     color: rgba(68, 218, 88, 0.8);
     text-shadow: 
     0 0 1px rgba(68, 218, 88, 1),
