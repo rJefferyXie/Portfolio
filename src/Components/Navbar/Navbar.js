@@ -9,10 +9,10 @@ const Navbar = () => {
     };
 
     const ScrollTo = (id) => {
-        let section = document.querySelector(id);
-        section.scrollIntoView({ 
-            behavior: "smooth",
-            block: "center"
+        let section = document.querySelector(id).offsetTop;
+        window.scroll({
+            top: section,
+            behavior: "smooth"
         });
     }
 
