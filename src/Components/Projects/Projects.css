@@ -3,3 +3,98 @@
     width: 100vw;
     align-items: flex-end;
 }
+
+#Project-page-container {
+    width: 95%;
+    flex-wrap: wrap;
+}
+
+.Project-card {
+    height: 280px;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(126, 174, 186, 0.5);
+    margin: 10px;
+    overflow: hidden;
+}
+
+.Project-left {
+    width: 60%;
+    height: 100%;
+}
+
+.Project-image {
+    width: 100%;
+    height: 75%;
+}
+
+.Technologies {
+    height: 25%;
+    width: 100%;
+}
+
+.Tech {
+    height: 100%;
+    text-align: center;
+    color: black;
+    margin: 0px 5px 10px 5px;
+}
+
+.Tech-name {
+    font-size: 0.6rem;
+    width: 100%;
+}
+
+.Project-right {
+    width: 40%;
+    height: 100%;
+    justify-content: flex-start;
+}
+
+.Project-name {
+    margin: 20px 0px 0px 0px;
+    color: #a5c4ec;
+    text-shadow: 
+    0 0 1px rgba(165, 178, 236, 0.9),
+    1px 1px 1px rgba(0,0,0,0.4);
+    text-align: center;
+}
+
+.Project-description {
+    font-size: 0.8rem;
+    width: 95%;
+}
+
+.Links {
+    height: 100%;
+    width: 100%;
+}
+
+.Project-link {
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    color: white;
+    text-shadow: 
+    0 0 1px rgba(255,255,255,0.8), 
+    2px 2px 2px rgba(0,0,0,0.4);
+    font-size: 1rem;
+    background-color: #a5c4ec;
+    border-radius: 6px;
+    padding: 10px;
+    margin: 0px 2px 0px 2px;
+}
+
+.Project-link:hover {
+    background-color: rgba(68, 218, 88, 0.5);
+}
+
+@media screen and (max-width: 960px) {
+    #Projects {
+        height: 1300px;
+    }
+
+    #Project-page-container {
+        width: 100%;
+    }
+}
