@@ -5,10 +5,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Hero = () => {
     const ScrollTo = (id) => {
-        let section = document.querySelector(id);
-        section.scrollIntoView({ 
-            behavior: "smooth",
-            block: "center"
+        let section = document.querySelector(id).offsetTop;
+        window.scroll({
+            top: section,
+            behavior: "smooth"
         });
     }
 
@@ -16,10 +16,10 @@ const Hero = () => {
         <div id="Hero">
             <div className="Intro-container flex-col">
                 <div className="Text-line flex">
-                    <p>Hello! My name is 
-                        <span> Jeffery Xie </span> 
+                    <p className="Shadow-p">Hello! My name is 
+                        <span className="Shadow-span"> Jeffery Xie </span> 
                         and I am a 
-                        <span> Front-End Developer.</span>
+                        <span className="Shadow-span"> Front-End Developer.</span>
                     </p>
                 </div>
                 <div className="Arrow-circle flex">
