@@ -1,11 +1,15 @@
 import './Projects.css';
 
-import image from "../../images/wallpaper.jpg";
+import mongoDB from "../../images/mongodb.png";
+import unite1 from "../../images/unite-1.png";
+import pathfinder1 from "../../images/pathfinder-1.png";
+import pokepedia1 from "../../images/pokepedia-1.png";
+import catstronauts1 from "../../images/catstronauts-1.png";
+
 import { faReact } from '@fortawesome/free-brands-svg-icons';
 import { faCss3 } from '@fortawesome/free-brands-svg-icons';
 import { faCodeBranch } from '@fortawesome/free-solid-svg-icons';
 import { faServer } from '@fortawesome/free-solid-svg-icons';
-import { faDatabase } from '@fortawesome/free-solid-svg-icons';
 import { faNodeJs } from '@fortawesome/free-brands-svg-icons';
 import { faUnity } from '@fortawesome/free-brands-svg-icons';
 import { faGitlab } from '@fortawesome/free-brands-svg-icons';
@@ -20,10 +24,13 @@ const Projects = () => {
             <div id="Project-page-container" className="Page-container flex">
                 <div className="Project-card flex">
                     <div className="Project-left">
-                        <img src={image} alt="" className="Project-image"></img>
+                        <div className="Project-image-container">
+                            <img src={unite1} alt="" className="Project-image"></img>
+                            <div className="Image-overlay">Click To Learn More</div>
+                        </div>
                         <div className="Technologies flex">
                             <div className="Tech flex-col">
-                                <FontAwesomeIcon icon={faDatabase}></FontAwesomeIcon>
+                                <img src={mongoDB} alt="" id="MongoDB"></img>
                                 <p className="Tech-name">MongoDB</p>
                             </div>
                             <div className="Tech flex-col">
@@ -51,7 +58,10 @@ const Projects = () => {
                 </div>
                 <div className="Project-card flex">
                     <div className="Project-left">
-                        <img src={image} alt="" className="Project-image"></img>
+                        <div className="Project-image-container">
+                            <img src={pokepedia1} alt="" className="Project-image"></img>
+                            <div className="Image-overlay">Click To Learn More</div>
+                        </div>
                         <div className="Technologies flex">
                             <div className="Tech flex-col">
                                 <FontAwesomeIcon icon={faReact}></FontAwesomeIcon>
@@ -78,7 +88,10 @@ const Projects = () => {
                 </div>
                 <div className="Project-card flex">
                     <div className="Project-left">
-                        <img src={image} alt="" className="Project-image"></img>
+                        <div className="Project-image-container">
+                            <img src={catstronauts1} alt="" className="Project-image"></img>
+                            <div className="Image-overlay">Click To Learn More</div>
+                        </div>
                         <div className="Technologies flex">
                             <div className="Tech flex-col">
                                 <FontAwesomeIcon icon={faUnity}></FontAwesomeIcon>
@@ -104,7 +117,10 @@ const Projects = () => {
                 </div>
                 <div className="Project-card flex">
                     <div className="Project-left">
-                        <img src={image} alt="" className="Project-image"></img>
+                        <div className="Project-image-container">
+                            <img src={pathfinder1} alt="" className="Project-image"></img>
+                            <div className="Image-overlay">Click To Learn More</div>
+                        </div>
                         <div className="Technologies flex">
                             <div className="Tech flex-col">
                                 <FontAwesomeIcon icon={faPython}></FontAwesomeIcon>
@@ -114,7 +130,7 @@ const Projects = () => {
                     </div>
                     <div className="Project-right flex-col">
                         <h1 className="Project-name">Pathfinding Visualizer</h1>
-                        <p className="Project-description">A visual pathfinding program that allows the user to create their own obstacles or mazes and then run different pathfinding algorithms on it. Built with pygame library.</p>
+                        <p className="Project-description">A visual pathfinding program that allows the user to create their own obstacles or mazes and then run different pathfinding algorithms on it. Built with pygame.</p>
                         <div className="Links flex">
                             <a href="https://github.com/rJefferyXie/Pathfinding-Visualizer" target="_blank" rel="noreferrer" className="Project-link">Code</a>
                         </div>

@@ -23,9 +23,39 @@
     height: 100%;
 }
 
-.Project-image {
-    width: 100%;
+.Project-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
     height: 75%;
+    width: 100%;
+    cursor: pointer;
+}
+
+.Project-image {
+    height: 100%;
+    width: 100%;
+    border-bottom-right-radius: 10px;
+    border-right: 1px solid rgba(126, 174, 186, 0.5);
+    border-bottom: 1px solid rgba(126, 174, 186, 0.5);
+    object-fit: cover;
+}
+
+.Image-overlay {
+    position: absolute;
+    opacity: 0;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.Project-image-container:hover .Project-image {
+    filter: brightness(50%);
+}
+
+.Project-image-container:hover .Image-overlay {
+    opacity: 1;
 }
 
 .Technologies {
@@ -40,6 +70,10 @@
     margin: 0px 5px 10px 5px;
 }
 
+#MongoDB {
+    width: 42px;
+}
+
 .Tech-name {
     font-size: 0.6rem;
     width: 100%;
@@ -48,11 +82,11 @@
 .Project-right {
     width: 40%;
     height: 100%;
-    justify-content: flex-start;
 }
 
 .Project-name {
-    margin: 20px 0px 0px 0px;
+    font-size: 1.1rem;
+    margin: 10px 0px 5px 0px;
     color: #a5c4ec;
     text-shadow: 
     0 0 1px rgba(165, 178, 236, 0.9),
@@ -96,5 +130,10 @@
 
     #Project-page-container {
         width: 100%;
+    }
+
+    .Project-description {
+        font-size: 0.75rem;
+        width: 95%;
     }
 }
