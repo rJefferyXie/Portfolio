@@ -14,7 +14,7 @@ body {
 
 .Page-container {
     height: calc(100% - 80px);
-    width: min(100%, 1980px);
+    width: min(100%, 1360px);
 }
 
 .flex {
