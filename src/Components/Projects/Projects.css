@@ -2,6 +2,7 @@
     height: 100vh;
     width: 100vw;
     align-items: flex-end;
+    background-color: rgb(251, 254, 255);
 }
 
 #Project-page-container {
@@ -11,66 +12,61 @@
 
 .Project-card {
     height: 280px;
-    width: 400px;
+    width: 360px;
     border-radius: 10px;
     box-shadow: 0px 0px 5px rgba(126, 174, 186, 0.5);
     margin: 10px;
     overflow: hidden;
-}
-
-.Project-left {
-    width: 60%;
-    height: 100%;
-}
-
-.Project-image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: relative;
-    height: 75%;
-    width: 100%;
     cursor: pointer;
+    transition: all 2s ease;
 }
 
 .Project-image {
-    height: 100%;
+    height: 80%;
     width: 100%;
-    border-bottom-right-radius: 10px;
-    border-right: 1px solid rgba(126, 174, 186, 0.5);
-    border-bottom: 1px solid rgba(126, 174, 186, 0.5);
+    position: absolute;
+    top: 0;
     object-fit: cover;
 }
 
-.Image-overlay {
+.Project-header {
+    bottom: 0;
     position: absolute;
-    opacity: 0;
-    color: white;
-    text-align: center;
     width: 100%;
-    text-shadow: 
-    0 0 1px rgba(255,255,255,0.8), 
-    2px 2px 2px rgba(0,0,0,0.4);
+    height: 20%;
+    background-color: white;
+    transition: all 0.5s ease;
 }
 
-.Project-image-container:hover .Project-image {
-    filter: brightness(25%);
+.Project-info {
+    height: 45%;
+    z-index: 1;
+    position: absolute;
+    transform: translateY(100%);
+    bottom: 0;
+    background-color: white;
+    transition: all 0.5s ease;
 }
 
-.Project-image-container:hover .Image-overlay {
-    opacity: 1;
+.Project-card:hover .Project-info, .Project-card:active .Project-info {
+    transform: translateY(0%);
+}
+
+.Project-card:hover .Project-header, .Project-card:active .Project-header {
+    transform: translateY(-210%);
 }
 
 .Technologies {
-    height: 25%;
-    width: 100%;
+    height: 100%;
+    margin: 0px 0px 0px 10px;
 }
 
 .Tech {
     height: 100%;
     text-align: center;
     color: black;
-    margin: 0px 5px 10px 5px;
+    margin: 0px 5px 0px 5px;
 }
 
 #MongoDB {
@@ -78,32 +74,25 @@
 }
 
 .Tech-name {
-    font-size: 0.6rem;
+    font-size: 0.55rem;
     width: 100%;
-}
-
-.Project-right {
-    width: 40%;
-    height: 100%;
+    margin: 2px 0px 0px 0px;
 }
 
 .Project-name {
     font-size: 1.1rem;
-    margin: 10px 0px 5px 0px;
-    color: #a5c4ec;
-    text-shadow: 
-    0 0 1px rgba(165, 178, 236, 0.9),
-    1px 1px 1px rgba(0,0,0,0.4);
+    color: #000000;
     text-align: center;
 }
 
 .Project-description {
     font-size: 0.8rem;
-    width: 95%;
+    padding: 4px;
+    width: 100%;
+    text-align: center;
 }
 
 .Links {
-    height: 100%;
     width: 100%;
 }
 
