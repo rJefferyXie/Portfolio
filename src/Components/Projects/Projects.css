@@ -59,14 +59,14 @@
 
 .Technologies {
     height: 100%;
-    margin: 0px 0px 0px 10px;
+    margin: 0px 0px 0px 5px;
 }
 
 .Tech {
     height: 100%;
     text-align: center;
     color: black;
-    margin: 0px 5px 0px 5px;
+    margin: 0px 3px 0px 3px;
 }
 
 #MongoDB {
@@ -74,7 +74,7 @@
 }
 
 .Tech-name {
-    font-size: 0.55rem;
+    font-size: 0.6rem;
     width: 100%;
     margin: 2px 0px 0px 0px;
 }
@@ -90,6 +90,7 @@
     padding: 4px;
     width: 100%;
     text-align: center;
+    margin: 2px 0px 7px 0px;
 }
 
 .Links {
@@ -108,7 +109,7 @@
     background-color: #a5c4ec;
     border-radius: 6px;
     padding: 10px;
-    margin: 0px 2px 0px 2px;
+    margin: auto 2px auto 2px;
 }
 
 .Project-link:hover {
@@ -117,7 +118,7 @@
 
 @media screen and (max-width: 960px) {
     #Projects {
-        height: 1300px;
+        height: 1900px;
     }
 
     #Project-page-container {
