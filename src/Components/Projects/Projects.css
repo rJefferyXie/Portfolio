@@ -1,25 +1,17 @@
-#Projects {
-    height: 100vh;
-    width: 100vw;
-    align-items: flex-end;
-    background-color: rgb(251, 254, 255);
-}
-
 #Project-page-container {
-    width: 95%;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .Project-card {
-    height: 280px;
-    width: 360px;
+    height: max(40vh, 280px);
+    width: max(30vw, 360px);
     border-radius: 10px;
     box-shadow: 0px 0px 5px rgba(126, 174, 186, 0.5);
-    margin: 10px;
+    margin: max(0.5vw, 0.5vh);
     overflow: hidden;
     position: relative;
     cursor: pointer;
-    transition: all 2s ease;
 }
 
 .Project-image {
@@ -41,19 +33,27 @@
 
 .Project-info {
     height: 45%;
+    width: 100%;
     z-index: 1;
     position: absolute;
-    transform: translateY(100%);
     bottom: 0;
     background-color: white;
     transition: all 0.5s ease;
 }
 
-.Project-card:hover .Project-info, .Project-card:active .Project-info {
+.active-info {
+    transform: translateY(100%);
+}
+
+.translate-up {
+    transform: translateY(-210%);
+}
+
+.Project-card:hover .active-info, .Project-card:active .active-info {
     transform: translateY(0%);
 }
 
-.Project-card:hover .Project-header, .Project-card:active .Project-header {
+.Project-card:hover .active-header, .Project-card:active .active-header {
     transform: translateY(-210%);
 }
 
@@ -87,7 +87,7 @@
 
 .Project-description {
     font-size: 0.8rem;
-    padding: 4px;
+    padding: 0.5rem 0.5rem 0.1rem 0.5rem;
     width: 100%;
     text-align: center;
     margin: 2px 0px 7px 0px;
@@ -127,6 +127,5 @@
 
     .Project-description {
         font-size: 0.75rem;
-        width: 95%;
     }
 }
