@@ -9,12 +9,12 @@
 }
 
 body {
-    background-color: rgb(239, 239, 239);
+    background-color: rgb(251, 254, 255);
 }
 
 .Page-container {
     height: calc(100% - 80px);
-    width: min(100%, 1360px);
+    width: 100%;
 }
 
 .flex {
@@ -28,6 +28,11 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.Page-title {
+    font-size: 1.8rem;
+    margin: 1rem 0px 1rem 0px;
 }
 
 .Text-line {
