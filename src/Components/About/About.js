@@ -2,11 +2,11 @@ import './About.css';
 
 const About = () => {
     return (
-        <div id="About" className="flex">
+        <section id="About" className="flex">
             <div className="Page-container">
                 <p>About</p>
             </div>
-        </div>
+        </section>
     )
 }
 
