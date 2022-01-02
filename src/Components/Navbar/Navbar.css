@@ -33,7 +33,7 @@
 }   
 
 #Resume {
-    background-color: #a5c4ec;
+    background: #a5c4ec;
     width: 110px;
 }
 
@@ -42,7 +42,7 @@
 }
 
 #Resume:hover {
-    background-color: rgba(68, 218, 88, 0.5);
+    background-color: rgba(68, 201, 86, 0.5);
 }
 
 @media screen and (max-width: 960px) {

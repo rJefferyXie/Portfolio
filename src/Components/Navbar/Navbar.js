@@ -9,7 +9,7 @@ const Navbar = () => {
     };
 
     const ScrollTo = (id) => {
-        let section = document.querySelector(id).offsetTop;
+        let section = document.querySelector(id).offsetTop - 80;
         window.scroll({
             top: section,
             behavior: "smooth"

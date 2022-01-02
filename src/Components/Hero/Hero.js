@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Hero = () => {
     const ScrollTo = (id) => {
-        let section = document.querySelector(id).offsetTop;
+        let section = document.querySelector(id).offsetTop - 80;
         window.scroll({
             top: section,
             behavior: "smooth"
@@ -13,20 +13,20 @@ const Hero = () => {
     }
 
     return (
-        <div id="Hero">
+        <section id="Hero">
             <div className="Intro-container flex-col">
                 <div className="Text-line flex">
-                    <p className="Shadow-p">Hello! My name is 
-                        <span className="Shadow-span"> Jeffery Xie </span> 
+                    <p className="Shadow-p Hero-text">Hello! My name is 
+                        <span className="Shadow-span Hero-text"> Jeffery Xie </span> 
                         and I am a 
-                        <span className="Shadow-span"> Front-End Developer.</span>
+                        <span className="Shadow-span Hero-text"> Front-End Developer.</span>
                     </p>
                 </div>
                 <div className="Arrow-circle flex">
                     <FontAwesomeIcon icon={faArrowDown} className="Down-arrow" onClick={() => ScrollTo("#Projects")}></FontAwesomeIcon>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 
