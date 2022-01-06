@@ -1,5 +1,7 @@
 import './Navbar.css';
 
+import Resume from "../../images/Resume.pdf";
+
 const Navbar = () => {
 
     // Switch to mobile menu
@@ -29,7 +31,7 @@ const Navbar = () => {
                 <button onClick={() => ScrollTo("#Skills")} className="Navbar-button">Skills</button>
                 <button onClick={() => ScrollTo("#About")} className="Navbar-button">About</button>
                 <button onClick={() => ScrollTo("#Contact")} className="Navbar-button">Contact</button>
-                <button id="Resume" className="Navbar-button">Resume</button>
+                <a href={Resume} target="_blank" rel="noreferrer" id="Resume" className="Navbar-button flex">Resume</a>
             </div>
         </nav>
     );
