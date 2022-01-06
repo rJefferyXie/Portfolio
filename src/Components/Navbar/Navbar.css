@@ -9,7 +9,7 @@
 #Navbar-logo {
     height: 100%;
     width: 240px;
-    font-size: 2.2rem;
+    font-size: var(--step-3);
     background-color: transparent;
     border: none;
     color: white;
@@ -33,7 +33,7 @@
 }   
 
 #Resume {
-    background: #a5c4ec;
+    background-color: #a5c4ec;
     width: 110px;
 }
 
@@ -47,6 +47,7 @@
 
 @media screen and (max-width: 960px) {
     #Navbar-logo {
+        font-size: var(--step-5);
         margin-left: 25px;
     }
 
@@ -60,14 +61,18 @@
     }
 
     #Navbar-container.active {
-        background: #a5c4ec;
+        background: rgba(79, 165, 190, 0.9);
         top: 100%;
         transition: all 0.5s ease;
         z-index: 99;
         height: 50vh;
     }
 
-    #Navbar-container button {
+    #Resume {
+        background: initial;
+    }
+
+    #Navbar-container button, #Navbar-container a {
         height: 100%;
         width: 100%;
         border-top: 1px solid rgb(230, 230, 230);
