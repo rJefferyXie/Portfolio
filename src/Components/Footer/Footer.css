@@ -1,0 +1,8 @@
+#Footer {
+    margin-top: 2rem;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-size: var(--step-0);
+    background-color: rgb(228, 228, 228);
+}
