@@ -10,7 +10,6 @@ import Footer from "./Components/Footer/Footer";
 
 import React from "react";
 
-
 function App() {
   return (
     <div className="App">

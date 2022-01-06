@@ -1,5 +1,7 @@
-#About {
-    height: 100vh;
-    width: 100vw;
-    align-items: flex-end;
+#About-container {
+    width: min(100%, 1080px);
+    height: 100%;
+    border-radius: 16px;
+    background-color: white;
+    padding: 1rem;
 }
