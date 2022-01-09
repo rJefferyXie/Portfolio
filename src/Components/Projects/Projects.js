@@ -39,24 +39,24 @@ const Projects = () => {
             <div id="Projects-container" className="flex">
                 <div id="Project-grid" className="Page-container">
                     <div className="Project-card flex-col">
-                        <img src={unite1} alt="" className="Project-image"></img>
+                        <img src={unite1} alt="Unite The World" className="Project-image"></img>
                         <div className="Project-header active-header flex">
                             <h1 className="Project-name">UniteTheWorld</h1>
                             <div className="Technologies flex">
                                 <div className="Tech flex-col">
-                                    <img src={mongodb} alt="" className="icon"></img>
+                                    <img src={mongodb} alt="MongoDB" className="icon"></img>
                                     <p className="Tech-name">MongoDB</p>
                                 </div>
                                 <div className="Tech flex-col">
-                                    <img src={express} alt="" className="icon"></img>
+                                    <img src={express} alt="Express" className="icon"></img>
                                     <p className="Tech-name">Express</p>
                                 </div>
                                 <div className="Tech flex-col">
-                                    <img src={react} alt="" className="icon"></img>
+                                    <img src={react} alt="React" className="icon"></img>
                                     <p className="Tech-name">React</p>
                                 </div>
                                 <div className="Tech flex-col">
-                                    <img src={nodejs} alt="" className="icon"></img>
+                                    <img src={nodejs} alt="Node" className="icon"></img>
                                     <p className="Tech-name">NodeJS</p>
                                 </div>
                             </div>
@@ -70,24 +70,24 @@ const Projects = () => {
                         </div>
                     </div>
                     <div className="Project-card flex">
-                        <img src={pokepedia1} alt="" className="Project-image"></img>
+                        <img src={pokepedia1} alt="Pokepedia" className="Project-image"></img>
                         <div className="Project-header active-header flex">
                             <h1 className="Project-name">Poképedia</h1>
                             <div className="Technologies flex">
                                 <div className="Tech flex-col">
-                                    <img src={javascript} alt="" className="icon"></img>
+                                    <img src={javascript} alt="JavaScript" className="icon"></img>
                                     <p className="Tech-name">JavaScript</p>
                                 </div>
                                 <div className="Tech flex-col">
-                                    <img src={html5} alt="" className="icon"></img>
+                                    <img src={html5} alt="HTML" className="icon"></img>
                                     <p className="Tech-name">HTML</p>
                                 </div>
                                 <div className="Tech flex-col">
-                                    <img src={css3} alt="" className="icon"></img>
+                                    <img src={css3} alt="CSS" className="icon"></img>
                                     <p className="Tech-name">CSS</p>
                                 </div>
                                 <div className="Tech flex-col">
-                                    <img src={api} alt="" id="api" className="icon"></img>
+                                    <img src={api} alt="REST API" id="api" className="icon"></img>
                                     <p className="Tech-name">REST API</p>
                                 </div>
                             </div>
@@ -101,20 +101,20 @@ const Projects = () => {
                         </div>
                     </div>
                     <div className="Project-card flex">
-                    <img src={catstronauts1} alt="" className="Project-image"></img>
+                    <img src={catstronauts1} alt="Catstronauts" className="Project-image"></img>
                         <div className="Project-header active-header flex">
                             <h1 className="Project-name">Catstronauts</h1>
                             <div className="Technologies flex">
                                 <div className="Tech flex-col">
-                                    <img src={unity} alt="" className="icon"></img>
+                                    <img src={unity} alt="Unity" className="icon"></img>
                                     <p className="Tech-name">Unity</p>
                                 </div>
                                 <div className="Tech flex-col">
-                                    <img src={gitlab} alt="" className="icon"></img>
+                                    <img src={gitlab} alt="Gitlab" className="icon"></img>
                                     <p className="Tech-name">Gitlab</p>
                                 </div>
                                 <div className="Tech flex-col">
-                                    <img src={csharp} alt="" className="icon"></img>
+                                    <img src={csharp} alt="C#" className="icon"></img>
                                     <p className="Tech-name">C#</p>
                                 </div>
                             </div>
@@ -127,12 +127,12 @@ const Projects = () => {
                         </div>
                     </div>
                     <div className="Project-card flex">
-                        <img src={webscraper1} alt="" className="Project-image"></img>
+                        <img src={webscraper1} alt="Clothing Web Scraper" className="Project-image"></img>
                         <div className="Project-header active-header flex">
                             <h1 className="Project-name">Clothing Web Scraper</h1>
                             <div className="Technologies flex">
                                 <div className="Tech flex-col">
-                                    <img src={python} alt="" className="icon"></img>
+                                    <img src={python} alt="Python" className="icon"></img>
                                     <p className="Tech-name">Python</p>
                                 </div>
                             </div>
@@ -145,12 +145,12 @@ const Projects = () => {
                         </div>
                     </div>
                     <div className="Project-card flex">
-                        <img src={pathfinder1} alt="" className="Project-image"></img>
+                        <img src={pathfinder1} alt="Pathfinding Visualizer" className="Project-image"></img>
                         <div className="Project-header active-header flex">
                             <h1 className="Project-name">Pathfinding Visualizer</h1>
                             <div className="Technologies flex">
                                 <div className="Tech flex-col">
-                                    <img src={python} alt="" className="icon"></img>
+                                    <img src={python} alt="Python" className="icon"></img>
                                     <p className="Tech-name">Python</p>
                                 </div>
                             </div>
@@ -163,12 +163,12 @@ const Projects = () => {
                         </div>
                     </div>
                     <div className="Project-card flex">
-                        <img src={chess1} alt="" className="Project-image"></img>
+                        <img src={chess1} alt="Chess Engine Visualizer" className="Project-image"></img>
                         <div className="Project-header active-header flex">
                             <h1 className="Project-name">Chess Engine Visualizer</h1>
                             <div className="Technologies flex">
                                 <div className="Tech flex-col">
-                                    <img src={python} alt="" className="icon"></img>
+                                    <img src={python} alt="Python" className="icon"></img>
                                     <p className="Tech-name">Python</p>
                                 </div>
                             </div>
