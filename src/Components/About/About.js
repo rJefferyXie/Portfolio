@@ -5,7 +5,7 @@ const About = () => {
         <section id="About" className="flex-col">
             <h1 className="Page-title">About Me</h1>
             <div id="About-container" className="Page-container flex-col">
-                <p>I am a front-end web developer with a focus on the MERN stack, but I am always willing to explore and learn other technologies and frameworks as needed. If you're looking for a developer to add to your team, I'd love to hear from you!</p>
+                <p className="about-text">I am a front-end web developer with a focus on the MERN stack, but I am always willing to explore and learn other technologies and frameworks as needed. If you're looking for a developer to add to your team, I'd love to hear from you!</p>
             </div>
         </section>
     )
