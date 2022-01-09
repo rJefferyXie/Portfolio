@@ -62,7 +62,7 @@ const Projects = () => {
                             </div>
                         </div>
                         <div className="Project-info active-info">
-                            <p className="Project-description">A community-based organization that focuses on giving food to those who need it the most. Includes user authentication and verification.</p>
+                            <p className="Project-description">A community-based organization that focuses on giving food to those who need it. Includes user authentication and verification.</p>
                             <div className="Links flex">
                                 <a href="https://unitetheworld.netlify.app/" target="_blank" rel="noreferrer" className="Project-link">Demo</a>
                                 <a href="https://github.com/rJefferyXie/unitetheworld" target="_blank" rel="noreferrer" className="Project-link">Code</a>
@@ -120,7 +120,7 @@ const Projects = () => {
                             </div>
                         </div>
                         <div className="Project-info active-info">
-                            <p className="Project-description">A cat-themed shooter game built with Unity. Travel to other planets in outer space to rescue your animal friends from the evil aliens!</p>
+                            <p className="Project-description">A cat-themed shooter game built with Unity. Travel to other planets in space to rescue your animal friends from the evil aliens!</p>
                             <div className="Links flex">
                                 <a href="https://drive.google.com/file/d/1rnp4R0C5zJJRnaV1ghvS4k04SSIli_YM/view?usp=sharing" target="_blank" rel="noreferrer" className="Project-link">Demo</a>
                             </div>
@@ -156,7 +156,7 @@ const Projects = () => {
                             </div>
                         </div>
                         <div className="Project-info active-info">
-                            <p className="Project-description">A visual pathfinding program that allows the user to create their own obstacles or mazes and then run different pathfinding algorithms on it.</p>
+                            <p className="Project-description">A visual pathfinding program that allows the user to create their own obstacles or mazes and then run pathfinding algorithms on them.</p>
                             <div className="Links flex">
                                 <a href="https://github.com/rJefferyXie/Pathfinding-Visualizer" target="_blank" rel="noreferrer" className="Project-link">Code</a>
                             </div>
@@ -174,7 +174,7 @@ const Projects = () => {
                             </div>
                         </div>
                         <div className="Project-info active-info">
-                            <p className="Project-description">A chess program that includes local multiplayer and single player. The AI uses the minimax algorithm, which you can observe in real time.</p>
+                            <p className="Project-description">A chess program that includes local multiplayer and single player. The AI uses minimax, which you can observe in real time.</p>
                             <div className="Links flex">
                                 <a href="https://github.com/rJefferyXie/Chess-Program-with-Minimax-Visualizer" target="_blank" rel="noreferrer" className="Project-link">Code</a>
                             </div>

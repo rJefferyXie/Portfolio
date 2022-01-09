@@ -8,27 +8,25 @@
     width: 100%;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (48%)[auto-fill];
-    -ms-grid-rows: (min(45vh, 400px))[auto-fill];
-    grid-template-columns: repeat(auto-fill, 48%);
-    grid-template-rows: repeat(auto-fill, min(45vh, 400px));
-    grid-column-gap: 30px;
-    grid-row-gap: 30px;
+    -ms-grid-columns: (32%)[auto-fill];
+    -ms-grid-rows: (min(35vh, 400px))[auto-fill];
+    grid-template-columns: repeat(auto-fill, 32%);
+    grid-template-rows: repeat(auto-fill, min(35vh, 400px));
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
     border-radius: 1rem;
     background-color: white;
     justify-content: center;
-    margin-top: 2rem;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .Project-card {
-    height: min(45vh, 400px);
+    height: min(35vh, 400px);
     width: 100%;
     border-radius: 1rem;
     overflow: hidden;
     position: relative;
-    border: 1px solid rgba(126, 174, 186, 0.5);
-    box-shadow: 0px 0px 5px rgba(126, 174, 186, 0.5);
+    box-shadow: 0px 0px 2px rgb(81, 174, 211);
 }
 
 .Project-image {
@@ -49,7 +47,7 @@
 }
 
 .Project-info {
-    height: 45%;
+    height: 50%;
     width: 100%;
     z-index: 1;
     position: absolute;
@@ -63,7 +61,7 @@
 }
 
 .translate-up {
-    transform: translateY(-215%);
+    transform: translateY(-245%);
 }
 
 .Project-card:hover .active-info, .Project-card:active .active-info {
@@ -71,12 +69,11 @@
 }
 
 .Project-card:hover .active-header, .Project-card:active .active-header {
-    transform: translateY(-215%);
+    transform: translateY(-245%);
 }
 
 .Technologies {
     height: 100%;
-    margin: 0px 0px 0px 0.3rem;
 }
 
 .Tech {
@@ -96,7 +93,7 @@
 }
 
 .Project-name {
-    font-size: var(--step-0);
+    font-size: var(--step--1);
 }
 
 .Project-description {
@@ -118,26 +115,30 @@
     text-shadow: 
     0 0 1px rgba(255,255,255,0.8), 
     2px 2px 2px rgba(0,0,0,0.4);
-    background-color: #a5c4ec;
+    background-color: rgb(81, 174, 211);
     border-radius: 6px;
     padding: 10px;
     margin: auto 0.2rem auto 0.2rem;
 }
 
 .Project-link:hover {
-    background-color: rgba(68, 218, 88, 0.5);
+    background-color: rgb(94, 185, 221);
 }
 
 @media screen and (max-width: 960px) {
     #Project-grid {
-        -ms-grid-columns: (100%)[auto-fill];
-        -ms-grid-rows: (420px)[auto-fill];
-        grid-template-columns: repeat(auto-fill, 100%);
-        grid-template-rows: repeat(auto-fill, 420px);
+        -ms-grid-columns: (45%)[auto-fill];
+        -ms-grid-rows: (min(25vh, 400px))[auto-fill];
+        grid-template-columns: repeat(auto-fill, 45%);
+        grid-template-rows: repeat(auto-fill, min(25vh, 400px));
     }
 
     .Project-card {
-        height: 420px;
+        height: min(25vh, 400px);
+    }
+
+    .Project-link {
+        font-size: var(--step-1);
     }
 }
 
@@ -145,17 +146,17 @@
     #Project-grid {
         background-color: initial;
         -ms-grid-columns: (100%)[auto-fill];
-        -ms-grid-rows: (240px)[auto-fill];
+        -ms-grid-rows: (min(280px, 50vh))[auto-fill];
         grid-template-columns: repeat(auto-fill, 100%);
-        grid-template-rows: repeat(auto-fill, 240px);
+        grid-template-rows: repeat(auto-fill, min(280px, 50vh));
     }
 
     .Project-card {
-        height: 240px;
+        height: min(280px, 50vh);
     }
 
     .Tech-name {
-        font-size: var(--step-1);
+        font-size: var(--step-2);
     }
     
     .Project-name {
@@ -163,6 +164,6 @@
     }
     
     .Project-description {
-        font-size: var(--step-2);
+        font-size: var(--step-3);
     }
 }
