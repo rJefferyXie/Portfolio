@@ -22,11 +22,11 @@ const Hero = () => {
                     <p className="Shadow-p Hero-text">Hello! My name is 
                         <span className="Shadow-span Hero-text"> Jeffery Xie </span> 
                         and I am a 
-                        <span className="Shadow-span Hero-text"> Front-End Engineer.</span>
+                        <span className="Shadow-span Hero-text"> Front-End Web Developer.</span>
                     </p>
                     <a href={Resume} target="_blank" rel="noreferrer" id="Resume" className="Navbar-button flex">Resume</a>
                 </div>
-                <img id="Hero-image" src={hero}></img>
+                <img id="Hero-image" alt="" src={hero}></img>
                 <div className="Arrow-container flex">
                     <FontAwesomeIcon icon={faArrowDown} className="Down-arrow" onClick={() => ScrollTo("#Projects")}></FontAwesomeIcon>
                 </div>
