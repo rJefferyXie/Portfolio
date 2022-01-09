@@ -138,7 +138,7 @@
     }
 
     .Project-link {
-        font-size: var(--step-1);
+        font-size: var(--step-2);
     }
 }
 
@@ -164,6 +164,10 @@
     }
     
     .Project-description {
+        font-size: var(--step-3);
+    }
+
+    .Project-link {
         font-size: var(--step-3);
     }
 }
