@@ -68,12 +68,20 @@
         width: 90%;
     }
 
+    .Arrow-container {
+        top: calc(100% - 15vh);
+    }
+
     .Down-arrow {
         font-size: var(--step-3);
     }
 }
 
 @media screen and (max-width: 720px) {
+    .Arrow-container {
+        top: calc(100% - 13vh);
+    }
+
     .Down-arrow {
         font-size: var(--step-5);
     }
