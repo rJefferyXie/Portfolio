@@ -21,9 +21,65 @@ body {
     background-color: rgb(250, 250, 250);
 }
 
-.Page-container {
+section {
+    width: min(100%, 1080px);
+    height: 100%;
+    margin: auto;
+}
+
+form {
+    width: 100%;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0px 10px 0px;
+    resize: none;
+}
+
+button, a {
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    color: white;
+    text-shadow: 
+    0 0 1px rgba(255,255,255,0.8), 
+    2px 2px 2px rgba(0,0,0,0.4);
+    font-size: var(--step-1);
+    border-radius: 16px;
+    padding: 10px 20px;
+}
+
+p {
+    width: 95%;
+}
+
+h1 {
+    font-size: var(--step-3);
+    color: rgb(17, 94, 156);
+    text-shadow: 
+    0 0 1px rgba(22, 98, 160, 0.8), 
+    1px 1px 1px rgba(0,0,0,0.4);
+    margin: 20px 0px 10px 0px;
+    width: 100%;
+    text-align: left;
+}
+
+h2 {
+    text-align: left;
+    width: 100%;
+}
+
+span {
+    color: rgb(17, 94, 156);
+    font-size: var(--step-1);
+}
+
+.page-container {
     height: calc(100% - 80px);
     width: 100%;
+    margin: 0px 0px 5vh 0px;
 }
 
 .flex {
@@ -39,49 +95,37 @@ body {
     align-items: center;
 }
 
-.Page-title {
-    font-size: var(--step-3);
-    color: rgb(81, 174, 211);
-    text-shadow: 
-    0 0 1px rgba(89, 191, 204, 0.8), 
-    1px 1px 1px rgba(0,0,0,0.4);
-    margin: 20px 0px 5px 0px;
+.grid {
+    display: -ms-grid;
+    display: grid;
+    border-radius: 16px;
+    background-color: white;
+    justify-content: center;
 }
 
-button, a {
-    cursor: pointer;
-    outline: none;
-    text-decoration: none;
-    color: white;
-    text-shadow: 
-    0 0 1px rgba(255,255,255,0.8), 
-    2px 2px 2px rgba(0,0,0,0.4);
-    font-size: var(--step-1);
-}
-
-p {
-    width: 95%;
-}
-
-.Shadow-p {
-    font-size: var(--step-1);
-}
-
-.Shadow-span {
-    color: rgb(81, 174, 211);
-    font-size: var(--step-1);
+.tech-name {
+    font-size: var(--step--2);
+    margin: 4px 0px 0px 0px;
+    text-align: center;
+    width: 100%;
 }
 
 @media screen and (max-width: 960px) {
-    .Page-title {
+    h1 {
         font-size: var(--step-5);
+        width: 90%;
+        margin: 20px 0px 10px 0px;
     }
 
     button, a {
         font-size: var(--step-3);
     }
 
-    .Shadow-p, .Shadow-span {
+    span {
         font-size: var(--step-4);
+    }
+
+    .tech-name {
+        font-size: var(--step-2);
     }
 }
