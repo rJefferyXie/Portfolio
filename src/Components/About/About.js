@@ -1,11 +1,56 @@
 import './About.css';
 
+import open from "../../images/undraw/creative.svg";
+import learn from "../../images/undraw/learn.svg";
+import creative from "../../images/undraw/team.svg";
+import gym from "../../images/undraw/gym.svg";
+import cooking from "../../images/undraw/cooking.svg";
+import videogames from "../../images/undraw/video-games.svg";
+
 const About = () => {
     return (
         <section id="About" className="flex-col">
-            <h1 className="Page-title">About Me</h1>
-            <div id="About-container" className="Page-container flex-col">
-                <p className="about-text">I am a front-end web developer with a focus on the MERN stack, but I am always willing to explore and learn other technologies and frameworks as needed. If you're looking for a developer to add to your team, I'd love to hear from you!</p>
+            <h1>About Me</h1>
+            <div id="About-container" className="page-container flex-col">
+                <p className="about-text">I am a front-end web developer who is always willing to explore and learn other technologies or frameworks that interest me. 
+                Being able to fully utilize my creativity and problem solving skills is my favourite part about coding, which is why I think web development is the perfect fit for me. 
+                If you're looking for a developer to add to your team, I'd love to hear from you!</p>
+                <div id="About-image-container" className="flex">
+                    <div id="Work-container" className="flex-col">
+                        <h3 className="about-header">I am...</h3>
+                        <div className="wrapper flex">
+                            <div className="image-wrapper flex-col">
+                                <img className="about-image" src={open} alt="A creative thinker."></img>
+                                <p>Creative</p>
+                            </div>
+                            <div className="image-wrapper flex-col">
+                                <img className="about-image" src={creative} alt="Open minded."></img>
+                                <p>Open-Minded</p>
+                            </div>
+                            <div className="image-wrapper flex-col">
+                                <img className="about-image" src={learn} alt="Willing to learn."></img>
+                                <p>Willing to Learn</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="Hobby-container" className="flex-col">
+                        <h3 className="about-header">Some of my hobbies are...</h3>
+                        <div className="wrapper flex">
+                            <div className="image-wrapper flex-col">
+                                <img className="about-image" src={gym} alt="Going to the gym."></img>
+                                <p>Going to the gym</p>
+                            </div>
+                            <div className="image-wrapper flex-col">
+                                <img className="about-image" src={cooking} alt="Cooking."></img>
+                                <p>Cooking</p>
+                            </div>
+                            <div className="image-wrapper flex-col">
+                                <img className="about-image" src={videogames} alt="Playing video games."></img>
+                                <p>Video Games</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     )

@@ -1,5 +1,4 @@
 #About-container {
-    width: min(100%, 1080px);
     height: 100%;
     border-radius: 16px;
     background-color: white;
@@ -8,11 +7,67 @@
 
 .about-text {
     font-size: var(--step-0);
+    line-height: 1.6rem;
+    padding: 2rem;
+}
+
+.wrapper {
+    width: 100%;
+    text-align: center;
+    padding: 1rem 3rem;
+}
+
+#About-image-container {
+    width: 100%;
+}
+
+#Work-container {
+    width: 50%;
+}
+
+#Hobby-container {
+    width: 50%;
+}
+
+.image-wrapper {
+    width: 100%;
+}
+
+.about-image {
+    height: 80px;
+    margin: 4px 0px 4px 0px;
 }
 
 @media screen and (max-width: 960px) {
+    #About-image-container {
+        flex-direction: column;
+    }
+
+    #Work-container {
+        width: 100%;
+        margin: 20px 0px 20px 0px;
+    }
     
+    #Hobby-container {
+        width: 100%;
+        margin: 20px 0px 20px 0px;
+    }
+
+    .wrapper {
+        padding: 1rem;
+    }
+
+    .about-header {
+        width: 100%;
+    }
+
+    .about-image {
+        height: 75px;
+    }
+
     .about-text {
         font-size: var(--step-3);
+        padding: 0px;
+        line-height: initial;
     }
 }
