@@ -1,11 +1,11 @@
 import './Projects.css';
 
-import unite1 from "../../images/unite-1.png";
-import pathfinder1 from "../../images/pathfinder-2.png";
-import pokepedia1 from "../../images/pokepedia-1.png";
-import catstronauts1 from "../../images/catstronauts-1.png";
-import chess1 from "../../images/chess-1.png";
-import webscraper1 from "../../images/web-scraper-2.png";
+import unite1 from "../../images/projects/unite-1.png";
+import pathfinder1 from "../../images/projects/pathfinder-2.png";
+import pokepedia1 from "../../images/projects/pokepedia-1.png";
+import catstronauts1 from "../../images/projects/catstronauts-1.png";
+import chess1 from "../../images/projects/chess-1.png";
+import webscraper1 from "../../images/projects/web-scraper-2.png";
 
 // Icons
 import mongodb from "../../images/icons/mongodb.svg";
@@ -34,30 +34,32 @@ const Projects = () => {
 
     return (
         <section id="Projects" className="flex-col">
-            <h1 className="Page-title">My Projects</h1>
-            <button onClick={HoverEffect}>Hover Effects</button>
+            <div id="Projects-header" className="flex">
+                <h1>My Projects</h1>
+                <button id="HoverEffects" onClick={HoverEffect}>Hover Effects</button>
+            </div>
             <div id="Projects-container" className="flex">
-                <div id="Project-grid" className="Page-container">
+                <div id="Project-grid" className="grid page-container">
                     <div className="Project-card flex-col">
                         <img src={unite1} alt="Unite The World" className="Project-image"></img>
                         <div className="Project-header active-header flex">
-                            <h1 className="Project-name">UniteTheWorld</h1>
+                            <h3 className="Project-name">UniteTheWorld</h3>
                             <div className="Technologies flex">
-                                <div className="Tech flex-col">
+                                <div className="tech-wrapper flex-col">
                                     <img src={mongodb} alt="MongoDB" className="icon"></img>
-                                    <p className="Tech-name">MongoDB</p>
+                                    <p className="tech-name">MongoDB</p>
                                 </div>
-                                <div className="Tech flex-col">
+                                <div className="tech-wrapper flex-col">
                                     <img src={express} alt="Express" className="icon"></img>
-                                    <p className="Tech-name">Express</p>
+                                    <p className="tech-name">Express</p>
                                 </div>
-                                <div className="Tech flex-col">
+                                <div className="tech-wrapper flex-col">
                                     <img src={react} alt="React" className="icon"></img>
-                                    <p className="Tech-name">React</p>
+                                    <p className="tech-name">React</p>
                                 </div>
-                                <div className="Tech flex-col">
+                                <div className="tech-wrapper flex-col">
                                     <img src={nodejs} alt="Node" className="icon"></img>
-                                    <p className="Tech-name">NodeJS</p>
+                                    <p className="tech-name">NodeJS</p>
                                 </div>
                             </div>
                         </div>
@@ -72,23 +74,23 @@ const Projects = () => {
                     <div className="Project-card flex">
                         <img src={pokepedia1} alt="Pokepedia" className="Project-image"></img>
                         <div className="Project-header active-header flex">
-                            <h1 className="Project-name">Poképedia</h1>
+                            <h3 className="Project-name">Poképedia</h3>
                             <div className="Technologies flex">
-                                <div className="Tech flex-col">
+                                <div className="tech-wrapper flex-col">
                                     <img src={javascript} alt="JavaScript" className="icon"></img>
-                                    <p className="Tech-name">JavaScript</p>
+                                    <p className="tech-name">JavaScript</p>
                                 </div>
-                                <div className="Tech flex-col">
+                                <div className="tech-wrapper flex-col">
                                     <img src={html5} alt="HTML" className="icon"></img>
-                                    <p className="Tech-name">HTML</p>
+                                    <p className="tech-name">HTML</p>
                                 </div>
-                                <div className="Tech flex-col">
+                                <div className="tech-wrapper flex-col">
                                     <img src={css3} alt="CSS" className="icon"></img>
-                                    <p className="Tech-name">CSS</p>
+                                    <p className="tech-name">CSS</p>
                                 </div>
-                                <div className="Tech flex-col">
+                                <div className="tech-wrapper flex-col">
                                     <img src={api} alt="REST API" id="api" className="icon"></img>
-                                    <p className="Tech-name">REST API</p>
+                                    <p className="tech-name">REST API</p>
                                 </div>
                             </div>
                         </div>
@@ -103,19 +105,19 @@ const Projects = () => {
                     <div className="Project-card flex">
                     <img src={catstronauts1} alt="Catstronauts" className="Project-image"></img>
                         <div className="Project-header active-header flex">
-                            <h1 className="Project-name">Catstronauts</h1>
+                            <h3 className="Project-name">Catstronauts</h3>
                             <div className="Technologies flex">
-                                <div className="Tech flex-col">
+                                <div className="tech-wrapper flex-col">
                                     <img src={unity} alt="Unity" className="icon"></img>
-                                    <p className="Tech-name">Unity</p>
+                                    <p className="tech-name">Unity</p>
                                 </div>
-                                <div className="Tech flex-col">
+                                <div className="tech-wrapper flex-col">
                                     <img src={gitlab} alt="Gitlab" className="icon"></img>
-                                    <p className="Tech-name">Gitlab</p>
+                                    <p className="tech-name">Gitlab</p>
                                 </div>
-                                <div className="Tech flex-col">
+                                <div className="tech-wrapper flex-col">
                                     <img src={csharp} alt="C#" className="icon"></img>
-                                    <p className="Tech-name">C#</p>
+                                    <p className="tech-name">C#</p>
                                 </div>
                             </div>
                         </div>
@@ -129,11 +131,11 @@ const Projects = () => {
                     <div className="Project-card flex">
                         <img src={webscraper1} alt="Clothing Web Scraper" className="Project-image"></img>
                         <div className="Project-header active-header flex">
-                            <h1 className="Project-name">Clothing Web Scraper</h1>
+                            <h3 className="Project-name">Clothing Web Scraper</h3>
                             <div className="Technologies flex">
-                                <div className="Tech flex-col">
+                                <div className="tech-wrapper flex-col">
                                     <img src={python} alt="Python" className="icon"></img>
-                                    <p className="Tech-name">Python</p>
+                                    <p className="tech-name">Python</p>
                                 </div>
                             </div>
                         </div>
@@ -147,11 +149,11 @@ const Projects = () => {
                     <div className="Project-card flex">
                         <img src={pathfinder1} alt="Pathfinding Visualizer" className="Project-image"></img>
                         <div className="Project-header active-header flex">
-                            <h1 className="Project-name">Pathfinding Visualizer</h1>
+                            <h3 className="Project-name">Pathfinding Visualizer</h3>
                             <div className="Technologies flex">
-                                <div className="Tech flex-col">
+                                <div className="tech-wrapper flex-col">
                                     <img src={python} alt="Python" className="icon"></img>
-                                    <p className="Tech-name">Python</p>
+                                    <p className="tech-name">Python</p>
                                 </div>
                             </div>
                         </div>
@@ -165,11 +167,11 @@ const Projects = () => {
                     <div className="Project-card flex">
                         <img src={chess1} alt="Chess Engine Visualizer" className="Project-image"></img>
                         <div className="Project-header active-header flex">
-                            <h1 className="Project-name">Chess Engine Visualizer</h1>
+                            <h3 className="Project-name">Chess Engine Visualizer</h3>
                             <div className="Technologies flex">
-                                <div className="Tech flex-col">
+                                <div className="tech-wrapper flex-col">
                                     <img src={python} alt="Python" className="icon"></img>
-                                    <p className="Tech-name">Python</p>
+                                    <p className="tech-name">Python</p>
                                 </div>
                             </div>
                         </div>

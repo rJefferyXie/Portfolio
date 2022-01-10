@@ -1,22 +1,36 @@
 #Projects-container {
-    width: min(100%, 1080px);
+    width: 100%;
     height: 100%;
+    position: relative;
+}
+
+#Projects-header {
+    width: 100%;
+    align-items: flex-end;
+}
+
+#HoverEffects {
+    position: absolute;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(17, 94, 156);
+    font-size: var(--step-0);
+    width: 180px;
+    padding: 10px 0px;
+    margin: 0px 0px 6px 0px;
+}
+
+#HoverEffects:hover, #HoverEffects:active, #HoverEffects:focus {
+    background-color: rgb(36, 111, 173);
 }
 
 #Project-grid {
-    height: 100%;
-    width: 100%;
-    display: -ms-grid;
-    display: grid;
     -ms-grid-columns: (32%)[auto-fill];
     -ms-grid-rows: (min(35vh, 400px))[auto-fill];
     grid-template-columns: repeat(auto-fill, 32%);
     grid-template-rows: repeat(auto-fill, min(35vh, 400px));
     grid-column-gap: 15px;
     grid-row-gap: 15px;
-    border-radius: 1rem;
-    background-color: white;
-    justify-content: center;
     padding: 1rem;
 }
 
@@ -76,20 +90,13 @@
     height: 100%;
 }
 
-.Tech {
+.tech-wrapper {
     margin: 0px 0.2rem 0px 0.2rem;
 }
 
 .icon {
     width: 1.5rem;
     height: 1.5rem;
-}
-
-.Tech-name {
-    font-size: var(--step--2);
-    margin: 2px 0px 0px 0px;
-    text-align: center;
-    width: 100%;
 }
 
 .Project-name {
@@ -108,21 +115,18 @@
 }
 
 .Project-link {
-    cursor: pointer;
-    outline: none;
-    text-decoration: none;
     color: white;
     text-shadow: 
     0 0 1px rgba(255,255,255,0.8), 
     2px 2px 2px rgba(0,0,0,0.4);
-    background-color: rgb(81, 174, 211);
-    border-radius: 6px;
-    padding: 10px;
+    background-color: rgb(17, 94, 156);
+    padding: 10px 20px;
     margin: auto 0.2rem auto 0.2rem;
+    font-size: var(--step-0);
 }
 
-.Project-link:hover {
-    background-color: rgb(94, 185, 221);
+.Project-link:hover, .Project-link:active, .Project-link:focus {
+    background-color: rgb(36, 111, 173);
 }
 
 @media screen and (max-width: 960px) {
@@ -143,20 +147,26 @@
 }
 
 @media screen and (max-width: 720px) {
+    #Projects-header {
+        width: 90%;
+    }
+
+    #HoverEffects {
+        position: initial;
+        font-size: var(--step-3);
+    }
+
     #Project-grid {
         background-color: initial;
         -ms-grid-columns: (100%)[auto-fill];
         -ms-grid-rows: (min(280px, 50vh))[auto-fill];
         grid-template-columns: repeat(auto-fill, 100%);
         grid-template-rows: repeat(auto-fill, min(280px, 50vh));
+        padding: 0px 1rem 0px 1rem;
     }
 
     .Project-card {
         height: min(280px, 50vh);
-    }
-
-    .Tech-name {
-        font-size: var(--step-2);
     }
     
     .Project-name {
