@@ -1,0 +1,38 @@
+#Contact-form {
+    height: 100%;
+    width: 60%;
+}
+
+#Form-submit {
+    padding: 10px 20px;
+    font-size: var(--step-0);
+    border: none;
+    background-color: rgb(17, 94, 156);
+    color: white;
+    border-radius: 40px;
+    text-align: center;
+}
+
+#Form-submit:hover, #Form-submit:active, #Form-submit:focus {
+    background-color: rgb(36, 111, 173);
+}
+
+#Form-success {
+    text-align: center;
+}
+
+@media screen and (max-width: 960px) {
+    #Contact-form {
+        width: 100%;
+    }
+
+    #Form-submit {
+        font-size: var(--step-3);
+    }
+}
+
+@media screen and (max-width: 720px) {
+    #Contact-form {
+        margin: 20px 0px 0px 0px;
+    }
+}
