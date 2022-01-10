@@ -1,7 +1,67 @@
 #Contact-container {
-    width: min(100%, 1080px);
-    height: 100%;
     border-radius: 16px;
     background-color: white;
-    padding: 1rem;
+    padding: 2rem;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+#Contact-header {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+}
+
+#Contact-left {
+    height: 100%;
+    width: 40%;
+    text-align: center;
+    position: relative;
+}
+
+#Email-image {
+    width: 85%;
+    cursor: pointer;
+    padding: 20px;
+}
+
+#Send-email {
+    padding: 10px 20px;
+    font-size: var(--step-0);
+    border: none;
+    background-color: rgb(17, 94, 156);
+    color: white;
+    border-radius: 40px;
+    text-align: center;
+    z-index: 1;
+}
+
+#Send-email:hover, #Send-email:focus, #Send-email:active {
+    background-color: rgb(36, 111, 173);
+}
+
+@media screen and (max-width: 960px) {
+    #Contact-container {
+        flex-direction: column;
+    }
+
+    #Contact-header {
+        position: initial;
+    }
+
+    #Send-email {
+        position: absolute;
+        bottom: 10%;
+        font-size: var(--step-3);
+    }
+
+    #Email-image {
+        width: 100%;
+        padding: 10px;
+    }
+
+    #Contact-left {
+        width: 100%;
+    }
 }
