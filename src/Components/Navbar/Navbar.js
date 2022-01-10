@@ -25,10 +25,11 @@ const Navbar = () => {
                 <span className="bar"></span>
             </div>
             <div id="Navbar-container" className="flex" onClick={MobileMenu}>
-                <button onClick={() => ScrollTo("#Projects")} className="Navbar-button">Projects</button>
-                <button onClick={() => ScrollTo("#Skills")} className="Navbar-button">Skills</button>
-                <button onClick={() => ScrollTo("#About")} className="Navbar-button">About</button>
-                <button onClick={() => ScrollTo("#Contact")} className="Navbar-button">Contact</button>
+                <button onClick={() => ScrollTo("#Hero")} className="nav-button">Home</button>
+                <button onClick={() => ScrollTo("#Projects")} className="nav-button">Projects</button>
+                <button onClick={() => ScrollTo("#Skills")} className="nav-button">Skills</button>
+                <button onClick={() => ScrollTo("#About")} className="nav-button">About</button>
+                <button onClick={() => ScrollTo("#Contact")} className="nav-button">Contact</button>
             </div>
         </nav>
     );

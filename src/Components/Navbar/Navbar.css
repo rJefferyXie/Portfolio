@@ -2,13 +2,13 @@
     position: fixed;
     height: 80px;
     width: 100vw;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(46, 72, 128, 0.9);
     z-index: 9999;
 }
 
 #Navbar-logo {
     height: 100%;
-    width: 320px;
+    width: 280px;
     font-size: var(--step-3);
     background-color: transparent;
     border: none;
@@ -23,16 +23,14 @@
     width: 75%;
 }
 
-.Navbar-button {
-    height: 60px;
-    width: 100px;
-    border-radius: 8px;
+.nav-button {
+    height: 50px;
+    width: 120px;
     background-color: transparent;
     border: none;
-    margin: 0px 4px 0px 4px;
 }   
 
-.Navbar-button:hover {
+.nav-button:hover, .nav-button:focus, .nav-button:active {
     background-color: rgba(240, 240, 240, 0.5);
 }
 
@@ -48,11 +46,11 @@
         position: absolute;
         top: -1000px;
         transition: all 0.5s ease;
-        border: 1px solid rgb(230, 230, 230);
+        border-bottom: 1px solid rgb(0, 0, 0);
     }
 
     #Navbar-container.active {
-        background: rgba(79, 165, 190, 0.9);
+        background: rgba(46, 72, 128, 0.9);
         top: 100%;
         transition: all 0.5s ease;
         z-index: 99;
@@ -62,7 +60,7 @@
     #Navbar-container button, #Navbar-container a {
         height: 100%;
         width: 100%;
-        border-top: 1px solid rgb(230, 230, 230);
+        border-top: 1px solid rgb(0, 0, 0);
         border-radius: 0px;
     }
 
