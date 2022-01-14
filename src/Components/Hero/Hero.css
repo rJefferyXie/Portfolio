@@ -1,5 +1,5 @@
 #Hero {
-    height: min(100vh, 900px);
+    height: min(100vh, 1000px);
     align-items: flex-end;
 }
 
@@ -28,7 +28,6 @@
 
 #Resume {
     background-color: rgb(17, 94, 156);
-    width: 110px;
     margin-top: 1rem;
 }
 
@@ -64,6 +63,12 @@
 	60% {
     transform: translateY(-5px);
   }
+}
+
+@media screen and (min-width: 1300px) {
+    .hero-p {
+        font-size: var(--step-2);
+    }
 }
 
 @media screen and (max-width: 960px) {

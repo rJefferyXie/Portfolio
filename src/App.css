@@ -11,7 +11,7 @@
 
 * {
     box-sizing: border-box;
-    font-family: 'Kumbh Sans', sans-serif;
+    font-family: 'Helvetica', sans-serif;
     scroll-behavior: smooth;
     margin: 0;
     padding: 0;
@@ -22,8 +22,7 @@ body {
 }
 
 section {
-    width: min(100%, 1080px);
-    height: 100%;
+    width: min(90%, 1480px);
     margin: auto;
 }
 
@@ -48,7 +47,7 @@ button, a {
     2px 2px 2px rgba(0,0,0,0.4);
     font-size: var(--step-1);
     border-radius: 16px;
-    padding: 10px 20px;
+    padding: 15px 20px;
 }
 
 p {
@@ -59,7 +58,7 @@ h1 {
     font-size: var(--step-3);
     color: rgb(17, 94, 156);
     text-shadow: 
-    0 0 1px rgba(22, 98, 160, 0.8), 
+    0 0 1px rgba(121, 171, 212, 0.8), 
     1px 1px 1px rgba(0,0,0,0.4);
     margin: 20px 0px 10px 0px;
     width: 100%;
@@ -110,11 +109,29 @@ span {
     width: 100%;
 }
 
+@media screen and (min-width: 1300px) {
+    span {
+        font-size: var(--step-2);
+    }
+
+    button, a {
+        font-size: var(--step-2);
+    }
+
+    .tech-name {
+        font-size: var(--step--1);
+    }
+}
+
 @media screen and (max-width: 960px) {
     h1 {
         font-size: var(--step-5);
         width: 90%;
         margin: 20px 0px 10px 0px;
+    }
+
+    section {
+        width: 100%;
     }
 
     button, a {

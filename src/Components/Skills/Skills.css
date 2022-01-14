@@ -26,6 +26,21 @@
     border: 1px solid #eee;
 }
 
+@media screen and (min-width: 1300px) {
+    #Skill-grid {
+        -ms-grid-columns: (minmax(7rem, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(7rem, 1fr));
+        grid-column-gap: 2rem;
+        grid-row-gap: 2rem;
+        padding: 3rem;
+    } 
+
+    .skill-card {
+        width: 7rem;
+        height: 7rem;
+    }
+}
+
 @media screen and (max-width: 960px) {
     #Skill-grid {
         grid-column-gap: 16px;

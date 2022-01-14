@@ -38,6 +38,13 @@
     margin: 4px 0px 4px 0px;
 }
 
+@media screen and (min-width: 1300px) {
+    .about-text {
+        font-size: var(--step-1);
+        line-height: 1.7rem;
+    }
+}
+
 @media screen and (max-width: 960px) {
     #About-image-container {
         flex-direction: column;
