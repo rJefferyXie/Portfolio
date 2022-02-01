@@ -49,8 +49,7 @@
 @media screen and (max-width: 960px) {
     #About-container {
         box-shadow: none;
-        background-color: initial;
-        padding: 0px 1rem 0px 1rem;
+        padding: 1rem;
     }
 
     #About-image-container {
@@ -67,6 +66,11 @@
         margin: 20px 0px 20px 0px;
     }
 
+    .image-wrapper {
+        width: 100%;
+        font-size: var(--step-2);
+    }
+
     .wrapper {
         padding: 0px 1rem;
     }
@@ -76,7 +80,7 @@
     }
 
     .about-image {
-        height: 75px;
+        height: 70px;
     }
 
     .about-text {

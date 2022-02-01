@@ -20,15 +20,15 @@ const About = () => {
                         <h3 className="about-header">I am...</h3>
                         <div className="wrapper flex">
                             <div className="image-wrapper flex-col">
-                                <img className="about-image" src={open} alt="A creative thinker."></img>
+                                <img className="about-image" src={open} alt=""></img>
                                 <p>Creative</p>
                             </div>
                             <div className="image-wrapper flex-col">
-                                <img className="about-image" src={creative} alt="Open minded."></img>
+                                <img className="about-image" src={creative} alt=""></img>
                                 <p>Open-Minded</p>
                             </div>
                             <div className="image-wrapper flex-col">
-                                <img className="about-image" src={learn} alt="Willing to learn."></img>
+                                <img className="about-image" src={learn} alt=""></img>
                                 <p>Willing to Learn</p>
                             </div>
                         </div>
@@ -37,15 +37,15 @@ const About = () => {
                         <h3 className="about-header">Some of my hobbies are...</h3>
                         <div className="wrapper flex">
                             <div className="image-wrapper flex-col">
-                                <img className="about-image" src={gym} alt="Going to the gym."></img>
+                                <img className="about-image" src={gym} alt=""></img>
                                 <p>Going to the gym</p>
                             </div>
                             <div className="image-wrapper flex-col">
-                                <img className="about-image" src={cooking} alt="Cooking."></img>
+                                <img className="about-image" src={cooking} alt=""></img>
                                 <p>Cooking</p>
                             </div>
                             <div className="image-wrapper flex-col">
-                                <img className="about-image" src={videogames} alt="Playing video games."></img>
+                                <img className="about-image" src={videogames} alt=""></img>
                                 <p>Video Games</p>
                             </div>
                         </div>
