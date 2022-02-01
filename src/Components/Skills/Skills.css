@@ -9,6 +9,7 @@
     grid-column-gap: 2.7rem;
     grid-row-gap: 2.7rem;
     padding: 3rem;
+    box-shadow: 1px 1px 2px rgb(0, 0, 0, 27%);
 }
 
 .skill-icon {
@@ -46,6 +47,7 @@
         grid-column-gap: 16px;
         grid-row-gap: 16px;
         background-color: initial;
-        padding: 0px 2rem 0px 2rem;
+        padding: 0px 3rem 0px 3rem;
+        box-shadow: none;
     } 
 }
