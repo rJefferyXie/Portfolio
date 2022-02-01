@@ -12,12 +12,12 @@ import mongodb from "../../images/icons/mongodb.svg";
 import express from "../../images/icons/express.png";
 import react from "../../images/icons/react.svg";
 import nodejs from "../../images/icons/nodejs.svg";
-import javascript from "../../images/icons/javascript.svg";
-import html5 from "../../images/icons/html5.svg";
-import css3 from "../../images/icons/css3.svg";
+// import javascript from "../../images/icons/javascript.svg";
+// import html5 from "../../images/icons/html5.svg";
+// import css3 from "../../images/icons/css3.svg";
 import csharp from "../../images/icons/csharp.svg";
 import python from "../../images/icons/python.svg";
-import api from "../../images/icons/api.svg";
+// import api from "../../images/icons/api.svg";
 import unity from "../../images/icons/unity.svg";
 import gitlab from "../../images/icons/gitlab.svg";
 
@@ -64,10 +64,10 @@ const Projects = () => {
                             </div>
                         </div>
                         <div className="Project-info active-info">
-                            <p className="Project-description">A complete pokedex that includes information about every pokemon, a music player, and a built-in team generator.</p>
+                            <p className="Project-description">A complete pokedex with a built-in team generator that displays information about every pokemon in a beautiful and responsive UI.</p>
                             <div className="Links flex">
                                 <a href="https://rjefferyxie.github.io/Pokepedia/" target="_blank" rel="noreferrer" className="Project-link">Demo</a>
-                                <a href="https://github.com/rJefferyXie/Pokepedia" target="_blank" rel="noreferrer" className="Project-link">Code</a>
+                                <a href="https://github.com/rJefferyXie/Pokepedia-React" target="_blank" rel="noreferrer" className="Project-link">Code</a>
                             </div>
                         </div>
                     </div>
@@ -177,7 +177,7 @@ const Projects = () => {
                             </div>
                         </div>
                         <div className="Project-info active-info">
-                            <p className="Project-description">A chess program that includes local multiplayer and single player. The AI uses minimax, which you can observe in real time.</p>
+                            <p className="Project-description">A chess program that includes local multiplayer and single player vs an AI, which makes its moves using the minimax algorithm.</p>
                             <div className="Links flex">
                                 <a href="https://github.com/rJefferyXie/Chess-Program-with-Minimax-Visualizer" target="_blank" rel="noreferrer" className="Project-link">Code</a>
                             </div>
