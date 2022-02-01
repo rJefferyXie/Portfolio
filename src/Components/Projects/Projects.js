@@ -66,7 +66,7 @@ const Projects = () => {
                         <div className="Project-info active-info">
                             <p className="Project-description">A complete pokedex with a built-in team generator that displays information about every pokemon in a beautiful and responsive UI.</p>
                             <div className="Links flex">
-                                <a href="https://rjefferyxie.github.io/Pokepedia/" target="_blank" rel="noreferrer" className="Project-link">Demo</a>
+                                <a href="https://pokepediajx.netlify.app/" target="_blank" rel="noreferrer" className="Project-link">Demo</a>
                                 <a href="https://github.com/rJefferyXie/Pokepedia-React" target="_blank" rel="noreferrer" className="Project-link">Code</a>
                             </div>
                         </div>

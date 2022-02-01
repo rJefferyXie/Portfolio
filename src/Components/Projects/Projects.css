@@ -172,7 +172,6 @@
 
 @media screen and (max-width: 960px) {
     #Project-grid {
-        background-color: initial;
         -ms-grid-columns: (100%)[auto-fill];
         -ms-grid-rows: (max(280px, 35vh))[auto-fill];
         grid-template-columns: repeat(auto-fill, 100%);
@@ -200,7 +199,7 @@
     }
     
     .Project-description {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     .Project-link {
