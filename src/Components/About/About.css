@@ -3,6 +3,7 @@
     border-radius: 16px;
     background-color: white;
     padding: 1rem;
+    box-shadow: 1px 1px 4px rgb(0, 0, 0, 27%);
 }
 
 .about-text {
@@ -46,6 +47,12 @@
 }
 
 @media screen and (max-width: 960px) {
+    #About-container {
+        box-shadow: none;
+        background-color: initial;
+        padding: 0px 1rem 0px 1rem;
+    }
+
     #About-image-container {
         flex-direction: column;
     }
