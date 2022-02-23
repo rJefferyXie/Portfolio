@@ -3,6 +3,8 @@ import "./Hero.css";
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+import { Button } from "@mui/material";
+
 import hero from "../../images/undraw/hero.svg";
 import Resume from "../../images/Resume.pdf";
 
@@ -26,7 +28,7 @@ const Hero = () => {
                         <span className="Shadow-span Hero-text"> Front-End Web Developer </span>
                         who is passionate about creating interactive web applications and positive user experiences.
                     </p>
-                    <a href={Resume} target="_blank" rel="noreferrer" id="Resume" className="nav-button flex">Resume</a>
+                    <Button href={Resume} variant="contained" className="flex" id="Resume">Resume</Button>
                 </div>
                 <img id="Hero-image" alt="" src={hero}></img>
                 <div className="Arrow-container flex">

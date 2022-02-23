@@ -12,14 +12,12 @@ import mongodb from "../../images/icons/mongodb.svg";
 import express from "../../images/icons/express.png";
 import react from "../../images/icons/react.svg";
 import nodejs from "../../images/icons/nodejs.svg";
-// import javascript from "../../images/icons/javascript.svg";
-// import html5 from "../../images/icons/html5.svg";
-// import css3 from "../../images/icons/css3.svg";
 import csharp from "../../images/icons/csharp.svg";
 import python from "../../images/icons/python.svg";
-// import api from "../../images/icons/api.svg";
 import unity from "../../images/icons/unity.svg";
 import gitlab from "../../images/icons/gitlab.svg";
+
+import { Button, Card } from "@mui/material";
 
 const Projects = () => {
     const HoverEffect = () => {
@@ -40,7 +38,7 @@ const Projects = () => {
             </div>
             <div id="Projects-container" className="flex">
                 <div id="Project-grid" className="grid page-container">
-                <div className="Project-card flex">
+                    <Card className="Project-card flex">
                         <img src={pokepedia1} alt="Pokepedia" className="Project-image"></img>
                         <div className="Project-header active-header flex">
                             <h3 className="Project-name">Poképedia</h3>
@@ -66,12 +64,12 @@ const Projects = () => {
                         <div className="Project-info active-info">
                             <p className="Project-description">A complete pokedex with a built-in team generator that displays information about every pokemon in a beautiful and responsive UI.</p>
                             <div className="Links flex">
-                                <a href="https://pokepediajx.netlify.app/" target="_blank" rel="noreferrer" className="Project-link">Demo</a>
-                                <a href="https://github.com/rJefferyXie/Pokepedia-React" target="_blank" rel="noreferrer" className="Project-link">Code</a>
+                                <Button variant="contained" href="https://pokepediajx.netlify.app/" target="_blank" rel="noreferrer" style={{margin: "0px 2px", backgroundColor: "#115e9c"}}>Demo</Button>
+                                <Button variant="contained" href="https://github.com/rJefferyXie/Pokepedia-React" target="_blank" rel="noreferrer" style={{margin: "0px 2px", backgroundColor: "#115e9c"}}>Code</Button>
                             </div>
                         </div>
-                    </div>
-                    <div className="Project-card flex-col">
+                    </Card>
+                    <Card className="Project-card flex-col">
                         <img src={unite1} alt="Unite The World" className="Project-image"></img>
                         <div className="Project-header active-header flex">
                             <h3 className="Project-name">UniteTheWorld</h3>
@@ -97,12 +95,12 @@ const Projects = () => {
                         <div className="Project-info active-info">
                             <p className="Project-description">A community-based organization that focuses on giving food to those who need it. Includes user authentication and verification.</p>
                             <div className="Links flex">
-                                <a href="https://unitetheworld.netlify.app/" target="_blank" rel="noreferrer" className="Project-link">Demo</a>
-                                <a href="https://github.com/rJefferyXie/unitetheworld" target="_blank" rel="noreferrer" className="Project-link">Code</a>
+                                <Button variant="contained" href="https://unitetheworld.netlify.app/" target="_blank" rel="noreferrer" style={{margin: "0px 2px", backgroundColor: "#115e9c"}}>Demo</Button>
+                                <Button variant="contained" href="https://github.com/rJefferyXie/unitetheworld" target="_blank" rel="noreferrer" style={{margin: "0px 2px", backgroundColor: "#115e9c"}}>Code</Button>
                             </div>
                         </div>
-                    </div>
-                    <div className="Project-card flex">
+                    </Card>
+                    <Card className="Project-card flex">
                         <img src={pathfinder1} alt="Pathfinding Visualizer" className="Project-image"></img>
                         <div className="Project-header active-header flex">
                             <h3 className="Project-name">Pathfinding Visualizer</h3>
@@ -116,13 +114,13 @@ const Projects = () => {
                         <div className="Project-info active-info">
                             <p className="Project-description">A visual pathfinding program that allows the user to create their own obstacles or mazes and then run pathfinding algorithms on them.</p>
                             <div className="Links flex">
-                                <a href="https://rjefferyxie.github.io/Pathfinding-Demo/" target="_blank" rel="noreferrer" className="Project-link">Demo</a>
-                                <a href="https://github.com/rJefferyXie/Pathfinding-Visualizer" target="_blank" rel="noreferrer" className="Project-link">Code</a>
+                                <Button variant="contained" href="https://rjefferyxie.github.io/Pathfinding-Demo/" target="_blank" rel="noreferrer" style={{margin: "0px 2px", backgroundColor: "#115e9c"}}>Demo</Button>
+                                <Button variant="contained" href="https://github.com/rJefferyXie/Pathfinding-Visualizer" target="_blank" rel="noreferrer" style={{margin: "0px 2px", backgroundColor: "#115e9c"}}>Code</Button>
                             </div>
                         </div>
-                    </div>
-                    <div className="Project-card flex">
-                    <img src={catstronauts1} alt="Catstronauts" className="Project-image"></img>
+                    </Card>
+                    <Card className="Project-card flex">
+                        <img src={catstronauts1} alt="Catstronauts" className="Project-image"></img>
                         <div className="Project-header active-header flex">
                             <h3 className="Project-name">Catstronauts</h3>
                             <div className="Technologies flex">
@@ -143,11 +141,11 @@ const Projects = () => {
                         <div className="Project-info active-info">
                             <p className="Project-description">A cat-themed shooter game built with Unity. Travel to other planets in space to rescue your animal friends from the evil aliens!</p>
                             <div className="Links flex">
-                                <a href="https://drive.google.com/file/d/1rnp4R0C5zJJRnaV1ghvS4k04SSIli_YM/view?usp=sharing" target="_blank" rel="noreferrer" className="Project-link">Demo</a>
+                                <Button variant="contained" href="https://drive.google.com/file/d/1rnp4R0C5zJJRnaV1ghvS4k04SSIli_YM/view?usp=sharing" target="_blank" rel="noreferrer" style={{margin: "0px 2px", backgroundColor: "#115e9c"}}>Demo</Button>
                             </div>
                         </div>
-                    </div>
-                    <div className="Project-card flex">
+                    </Card>
+                    <Card className="Project-card flex">
                         <img src={webscraper1} alt="Clothing Web Scraper" className="Project-image"></img>
                         <div className="Project-header active-header flex">
                             <h3 className="Project-name">Clothing Web Scraper</h3>
@@ -161,11 +159,11 @@ const Projects = () => {
                         <div className="Project-info active-info">
                             <p className="Project-description">A webscraping application that gathers clothing information from popular clothing sites and presents the data all in one place.</p>
                             <div className="Links flex">
-                                <a href="https://github.com/rJefferyXie/Pathfinding-Visualizer" target="_blank" rel="noreferrer" className="Project-link">Code</a>
+                                <Button variant="contained" href="https://github.com/rJefferyXie/Pathfinding-Visualizer" target="_blank" rel="noreferrer" style={{margin: "0px 2px", backgroundColor: "#115e9c"}}>Code</Button>
                             </div>
                         </div>
-                    </div>
-                    <div className="Project-card flex">
+                    </Card>
+                    <Card className="Project-card flex">
                         <img src={chess1} alt="Chess Engine Visualizer" className="Project-image"></img>
                         <div className="Project-header active-header flex">
                             <h3 className="Project-name">Chess Engine Visualizer</h3>
@@ -179,10 +177,10 @@ const Projects = () => {
                         <div className="Project-info active-info">
                             <p className="Project-description">A chess program that includes local multiplayer and single player vs an AI, which makes its moves using the minimax algorithm.</p>
                             <div className="Links flex">
-                                <a href="https://github.com/rJefferyXie/Chess-Program-with-Minimax-Visualizer" target="_blank" rel="noreferrer" className="Project-link">Code</a>
+                                <Button variant="contained" href="https://github.com/rJefferyXie/Chess-Program-with-Minimax-Visualizer" target="_blank" rel="noreferrer" style={{margin: "0px 2px", backgroundColor: "#115e9c"}}>Code</Button>
                             </div>
                         </div>
-                    </div>
+                    </Card>
                 </div>
             </div>
         </section>
