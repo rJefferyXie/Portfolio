@@ -72,7 +72,6 @@ h2 {
 
 span {
     color: rgb(17, 94, 156);
-    font-size: var(--step-1);
 }
 
 .page-container {
@@ -103,24 +102,9 @@ span {
 }
 
 .tech-name {
-    font-size: var(--step--2);
     margin: 4px 0px 0px 0px;
     text-align: center;
     width: 100%;
-}
-
-@media screen and (min-width: 1300px) {
-    span {
-        font-size: var(--step-2);
-    }
-
-    button, a {
-        font-size: var(--step-2);
-    }
-
-    .tech-name {
-        font-size: var(--step--2);
-    }
 }
 
 @media screen and (max-width: 960px) {
@@ -132,17 +116,5 @@ span {
 
     section {
         width: 100%;
-    }
-
-    button, a {
-        font-size: var(--step-3);
-    }
-
-    span {
-        font-size: var(--step-4);
-    }
-
-    .tech-name {
-        font-size: 0.8rem;
     }
 }
