@@ -1,195 +1,126 @@
 #Projects-container {
     width: 100%;
     height: 100%;
-    position: relative;
 }
 
 #Projects-header {
     width: 100%;
-    align-items: flex-end;
-}
-
-#HoverEffects {
-    position: absolute;
-    border-radius: 8px;
-    border: none;
-    background-color: rgb(17, 94, 156);
-    font-size: var(--step-0);
-    width: 180px;
-    padding: 10px 0px;
-    margin: 0px 0px 12px 0px;
-}
-
-#HoverEffects:hover, #HoverEffects:active, #HoverEffects:focus {
-    background-color: rgb(36, 111, 173);
-}
-
-#Project-grid {
-    -ms-grid-columns: (32%)[auto-fill];
-    -ms-grid-rows: (min(35vh, 400px))[auto-fill];
-    grid-template-columns: repeat(auto-fill, 32%);
-    grid-template-rows: repeat(auto-fill, min(35vh, 400px));
-    grid-column-gap: 15px;
-    grid-row-gap: 15px;
-    padding: 1rem;
 }
 
 .Project-card {
-    height: min(35vh, 400px);
-    width: 100%;
+    width: min(100%, 1480px);
     border-radius: 8px;
-    overflow: hidden;
-    position: relative;
+    margin: 8px 0px;
+    padding: 1rem;
 }
 
 .Project-image {
-    height: 80%;
-    width: 100%;
-    position: absolute;
-    top: 0;
+    height: min(50vh, 240px);
+    width: min(95vw, 420px);
     object-fit: cover;
+    border-radius: 4px;
+    /* cursor: pointer; */
 }
 
-.Project-header {
-    bottom: 0;
-    position: absolute;
+.Project-image-buttons {
     width: 100%;
-    height: 20%;
-    background-color: white;
-    transition: all 0.5s ease;
+    margin: 8px auto 0px;
+}
+
+.Project-info-container {
+    text-align: left;
+    width: 100%;
+    padding: 1rem;
 }
 
 .Project-info {
-    height: 50%;
+    text-align: left;
     width: 100%;
-    z-index: 1;
-    position: absolute;
-    bottom: 0;
-    background-color: white;
-    transition: all 0.5s ease;
-}
-
-.active-info {
-    transform: translateY(100%);
-}
-
-.translate-up {
-    transform: translateY(-245%);
-}
-
-.Project-card:hover .active-info, .Project-card:active .active-info {
-    transform: translateY(0%);
-}
-
-.Project-card:hover .active-header, .Project-card:active .active-header {
-    transform: translateY(-245%);
-}
-
-.Technologies {
-    height: 100%;
-    margin: 0px 0px 0px 8px;
-}
-
-.tech-wrapper {
-    margin: 0px 0.2rem 0px 0.2rem;
-}
-
-.icon {
-    width: 1.5rem;
-    height: 1.5rem;
+    margin: 0px 0px 8px 0px;
 }
 
 .Project-name {
-    font-size: var(--step--1);
+    text-align: left;
+    width: 100%;
+    color: #115e9c;
+    margin: 0px 0px 4px 0px;
+}
+
+.technologies {
+    height: 100%;
+    width: 100%;
+    justify-content: flex-start;
+    margin: 0px 0px 8px 0px;
 }
 
 .Project-description {
-    font-size: var(--step--1);
-    padding: 0.5rem;
+    margin: 0px 0px 8px 0px;
+    padding: 0px;
     width: 100%;
-    text-align: center;
+}
+
+.Project-header {
+    width: 100%;
+    text-align: left;
+}
+
+.Project-points {
+    width: 100%;
+    margin: 0px auto 8px auto;
+}
+
+.Project-points li {
+    margin: 0px 16px;
 }
 
 .Links {
     width: 100%;
 }
 
-.Project-link:hover, .Project-link:active, .Project-link:focus {
-    background-color: rgb(36, 111, 173);
+#tumblr-a {
+    cursor: pointer;
+    outline: none;
+    text-decoration: underline;
+    color: #115e9c;
+    text-shadow: none;
+    border-radius: none;
+    padding: 0px 0px;
+    margin: none;
+    font-size: initial;
 }
 
-@media screen and (min-width: 1300px) {
-    .Project-name {
-        font-size: var(--step-1);
-    }
-    
-    .Project-description {
-        font-size: var(--step-0);
-    }
-
-    .Project-link {
-        font-size: var(--step-1);
-    }
+/* #Full-image-wrapper {
+    position: sticky;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+    overflow: auto;
 }
 
-@media screen and (max-width: 1240px) {
-    #Project-grid {
-        -ms-grid-columns: (48%)[auto-fill];
-        -ms-grid-rows: (45vh)[auto-fill];
-        grid-template-columns: repeat(auto-fill, 48%);
-        grid-template-rows: repeat(auto-fill, 45vh);
-    }
-
-    .Project-card {
-        height: 45vh;
-    }
-
-    .Project-name {
-        font-size: var(--step-1);
-    }
-    
-    .Project-description {
-        font-size: var(--step-0);
-    }
-
-    .Project-link {
-        font-size: var(--step-1);
-    }
-}
+#Full-image {
+    width: min(95%, 720px);
+    border-radius: 1rem;
+    margin-top: 1rem;
+} */
 
 @media screen and (max-width: 960px) {
-    #Project-grid {
-        -ms-grid-columns: (100%)[auto-fill];
-        -ms-grid-rows: (max(280px, 35vh))[auto-fill];
-        grid-template-columns: repeat(auto-fill, 100%);
-        grid-template-rows: repeat(auto-fill, max(280px, 35vh));
-        padding: 0px 1rem 0px 1rem;
-        box-shadow: none;
-    }
-
     .Project-card {
-        height: max(280px, 35vh);
+        flex-direction: column;
+        padding: 8px;
     }
 
-    #Projects-header {
-        width: 90%;
-    }
-
-    #HoverEffects {
-        position: initial;
-        font-size: var(--step-3);
-        margin: 0px 0px 8px 0px;
-    }
-    
     .Project-name {
-        font-size: var(--step-3);
-    }
-    
-    .Project-description {
-        font-size: 1rem;
+        margin: 8px 0px 0px 0px;
     }
 
-    .Project-link {
-        font-size: 1.3rem;
+    .Project-info-container {
+        padding: 0.3rem;
+    }
+
+    .Project-image {
+        margin-top: 0.5rem;
     }
 }
