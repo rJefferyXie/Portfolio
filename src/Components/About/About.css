@@ -9,7 +9,7 @@
 .about-text {
     font-size: var(--step-0);
     line-height: 1.6rem;
-    padding: 2rem;
+    padding: 1rem 0.5rem;
 }
 
 .wrapper {
@@ -49,7 +49,7 @@
 @media screen and (max-width: 960px) {
     #About-container {
         box-shadow: none;
-        padding: 1rem;
+        padding: 1rem 0.5rem;
     }
 
     #About-image-container {
