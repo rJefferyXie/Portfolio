@@ -13,7 +13,7 @@ const About = () => {
             <h1>About Me</h1>
             <div id="About-container" className="page-container flex-col">
                 <p className="about-text">I am a front-end web developer who is currently working with the MERN stack, but is always willing to explore and learn other technologies or frameworks that are better suited for the job. 
-                Being able to fully utilize my creativity and problem-solving skills is my favourite part about coding, which is why I believe web development is the perfect fit for me. 
+                Being able to utilize my creativity and problem-solving skills is my favourite part about coding, which is why I believe web development is the perfect fit for me. 
                 If you're looking for a developer to add to your team, I'd love to hear from you!</p>
                 <div id="About-image-container" className="flex">
                     <div id="Work-container" className="flex-col">
