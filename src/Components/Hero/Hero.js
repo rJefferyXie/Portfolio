@@ -28,7 +28,7 @@ const Hero = () => {
                         <span className="Shadow-span Hero-text"> Front-End Web Developer </span>
                         who is passionate about creating interactive web applications and positive user experiences.
                     </p>
-                    <Button href={Resume} variant="contained" className="flex" id="Resume">Resume</Button>
+                    <Button href={Resume} target="_blank" rel="noreferrer" variant="contained" className="flex" id="Resume">Resume</Button>
                 </div>
                 <img id="Hero-image" alt="" src={hero}></img>
                 <div className="Arrow-container flex">
