@@ -108,8 +108,8 @@ const Projects = () => {
                             <p className="Project-description">A complete pokedex with a built-in team generator that displays information about every pokemon in a beautiful and responsive UI.</p>
                             <h4 className="Project-header">Key Features</h4>
                             <ul className="Project-points">
+                                <li>Website is hosted using Heroku and Netlify.</li>
                                 <li>Used MaterialUI to create user feedback components.</li>
-                                <li>Website is hosted using cloud platforms (Heroku and Netlify).</li>
                                 <li>Implemented state management with Redux and React-Redux.</li>
                             </ul>
                         </div>
@@ -138,8 +138,8 @@ const Projects = () => {
                             <p className="Project-description">A community-based organization that focuses on giving food to those who need it. Includes user authentication and verification.</p>
                             <h4 className="Project-header">Key Features</h4>
                             <ul className="Project-points">
+                                <li>Website is hosted using Heroku and Netlify.</li>
                                 <li>Includes user authentication and verification.</li>
-                                <li>Website is hosted using cloud platforms (Heroku and Netlify).</li>
                                 <li>Encrypts user information such as passwords using bcrypt and jwt.</li>
                             </ul>
                         </div>
@@ -229,7 +229,7 @@ const Projects = () => {
                             <ul className="Project-points">
                                 <li>Interface is implemented with the model-view-controller pattern.</li>
                                 <li>Gathers data from five popular brands such as Nike and Billabong.</li>
-                                <li>Includes random pokemon facts that were web scraped from <a id="tumblr-a" href="https://randompokemonfacts.tumblr.com/archive"  target="_blank" rel="noreferrer">tumblr</a>.</li>
+                                <li>Utilizes Google Drive's cloud storage to store the clothing information.</li>
                             </ul>
                         </div>
                         <div className="Links flex">
