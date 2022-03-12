@@ -77,9 +77,14 @@
         margin-bottom: 75px;
     }
 
+    #Hero-header {
+        text-align: center;
+    }
+
     .Intro-left {
         height: 30%;
-        width: 90%;
+        width: 100%;
+        text-align: center;
     }
 
     .Arrow-container {
