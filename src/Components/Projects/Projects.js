@@ -12,6 +12,10 @@ import pathfinder1 from "../../images/projects/pathfinder-1.png";
 import pathfinder2 from "../../images/projects/pathfinder-2.png";
 import pathfinder3 from "../../images/projects/pathfinder-3.png";
 
+import spotify1 from "../../images/projects/spotify-1.png";
+import spotify2 from "../../images/projects/spotify-2.png";
+import spotify3 from "../../images/projects/spotify-3.png";
+
 import catstronauts1 from "../../images/projects/catstronauts-1.png";
 import catstronauts2 from "../../images/projects/catstronauts-2.png";
 import catstronauts3 from "../../images/projects/catstronauts-3.png";
@@ -30,7 +34,7 @@ import { useState } from 'react';
 
 const Projects = () => {
     const [image1, setImage1] = useState(pokepedia1);
-    const [image2, setImage2] = useState(unite1);
+    const [image2, setImage2] = useState(spotify1);
     const [image3, setImage3] = useState(pathfinder1);
     const [image4, setImage4] = useState(catstronauts1);
     const [image5, setImage5] = useState(webscraper1);
@@ -121,6 +125,36 @@ const Projects = () => {
                 </Card>
                 <Card className="Project-card flex" variant="outlined">
                     <div className="Project-image-container flex-col">
+                        <img src={image2} alt="SpotifyXHC" className="Project-image" style={{objectPosition: "top"}}></img>
+                        <div className="Project-image-buttons flex">
+                            <Button variant="outlined" className="image-select-2" id="img-4" onClick={() => setSelectedImage("image-select-2", "img-4", spotify1)} style={{margin: "0px 4px", color: "#1a98ca", textShadow: "initial"}}>Image 1</Button>
+                            <Button variant="outlined" className="image-select-2" id="img-5" onClick={() => setSelectedImage("image-select-2", "img-5", spotify2)} style={{margin: "0px 4px", color: "#115e9c", textShadow: "initial"}}>Image 2</Button>
+                            <Button variant="outlined" className="image-select-2" id="img-6" onClick={() => setSelectedImage("image-select-2", "img-6", spotify3)} style={{margin: "0px 4px", color: "#115e9c", textShadow: "initial"}}>Image 3</Button>
+                        </div>
+                    </div>
+                    <div className="Project-info-container flex-col">
+                        <div className="Project-info flex-col">
+                            <h2 className="Project-name">SpotifyXHC</h2>
+                            <h4 className="Project-header technologies">
+                                Technologies Used: <span>MongoDB, Express, React, NodeJS</span>
+                            </h4>
+                            <h4 className="Project-header">Brief Description</h4>
+                            <p className="Project-description">A Spotify web player that displays a user's top tracks and albums. Will include the ability to generate playlists based off of user's top tracks and artists.</p>
+                            <h4 className="Project-header">Key Features</h4>
+                            <ul className="Project-points">
+                                <li>Website is hosted using Heroku and Netlify.</li>
+                                <li>Search bar and song cards created using MaterialUI.</li>
+                                <li>State management will be implemented using react query.</li>
+                            </ul>
+                        </div>
+                        <div className="Links flex">
+                            <Button variant="contained" href="https://spotifyxhc.netlify.app/" target="_blank" rel="noreferrer" style={{margin: "0px 4px", backgroundColor: "#115e9c"}}>Demo</Button>
+                            <Button variant="contained" href="https://github.com/rJefferyXie/spotifyX" target="_blank" rel="noreferrer" style={{margin: "0px 4px", backgroundColor: "#115e9c"}}>Code</Button>
+                        </div>
+                    </div>
+                </Card>
+                {/* <Card className="Project-card flex" variant="outlined">
+                    <div className="Project-image-container flex-col">
                         <img src={image2} alt="Unite The World" className="Project-image"></img>
                         <div className="Project-image-buttons flex">
                             <Button variant="outlined" className="image-select-2" id="img-4" onClick={() => setSelectedImage("image-select-2", "img-4", unite1)} style={{margin: "0px 4px", color: "#1a98ca", textShadow: "initial"}}>Image 1</Button>
@@ -148,7 +182,7 @@ const Projects = () => {
                             <Button variant="contained" href="https://github.com/rJefferyXie/unitetheworld" target="_blank" rel="noreferrer" style={{margin: "0px 4px", backgroundColor: "#115e9c"}}>Code</Button>
                         </div>
                     </div>
-                </Card>
+                </Card> */}
                 <Card className="Project-card flex" variant="outlined">
                     <div className="Project-image-container flex-col">
                         <img src={image3} alt="Pathfinding Visualizer" className="Project-image"></img>
@@ -227,8 +261,8 @@ const Projects = () => {
                             <p className="Project-description">A webscraping application that gathers clothing information from popular clothing sites and presents the data all in one place.</p>
                             <h4 className="Project-header">Key Features</h4>
                             <ul className="Project-points">
+                                <li>Application was built with test driven development in mind.</li>
                                 <li>Interface is implemented with the model-view-controller pattern.</li>
-                                <li>Gathers data from five popular brands such as Nike and Billabong.</li>
                                 <li>Utilizes Google Drive's cloud storage to store the clothing information.</li>
                             </ul>
                         </div>
