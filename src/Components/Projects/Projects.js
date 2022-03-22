@@ -12,9 +12,9 @@ import pathfinder1 from "../../images/projects/pathfinder-1.png";
 import pathfinder2 from "../../images/projects/pathfinder-2.png";
 import pathfinder3 from "../../images/projects/pathfinder-3.png";
 
-import spotify1 from "../../images/projects/spotify-1.png";
+import spotify1 from "../../images/projects/spotify-3.png";
 import spotify2 from "../../images/projects/spotify-2.png";
-import spotify3 from "../../images/projects/spotify-3.png";
+import spotify3 from "../../images/projects/spotify-1.png";
 
 import catstronauts1 from "../../images/projects/catstronauts-1.png";
 import catstronauts2 from "../../images/projects/catstronauts-2.png";
