@@ -60,7 +60,7 @@ h1 {
     text-shadow: 
     0 0 1px rgba(121, 171, 212, 0.8), 
     1px 1px 1px rgba(0,0,0,0.4);
-    margin: 20px 0px 10px 0px;
+    margin: 20px 0px 4px 0px;
     width: 100%;
     text-align: left;
 }
@@ -110,8 +110,8 @@ span {
 @media screen and (max-width: 960px) {
     h1 {
         font-size: var(--step-5);
-        width: 90%;
-        margin: 20px 0px 10px 0px;
+        width: 100%;
+        margin: 10px 0px 0px 8px;
     }
 
     section {
