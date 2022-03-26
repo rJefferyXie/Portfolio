@@ -36,7 +36,7 @@
 .Project-info {
     text-align: left;
     width: 100%;
-    margin: 0px 0px 8px 0px;
+    margin: 0px 0px 16px 0px;
 }
 
 .Project-name {
@@ -49,12 +49,11 @@
 .technologies {
     height: 100%;
     width: 100%;
-    justify-content: flex-start;
-    margin: 0px 0px 8px 0px;
+    margin: 0px 0px 16px 0px;
 }
 
 .Project-description {
-    margin: 0px 0px 8px 0px;
+    margin: 0px 0px 16px 0px;
     padding: 0px;
     width: 100%;
 }
@@ -70,24 +69,12 @@
 }
 
 .Project-points li {
-    margin: 0px 16px;
+    margin: 0px 0px 0px 16px;
 }
 
 .Links {
     width: 100%;
     justify-content: flex-start;
-}
-
-#tumblr-a {
-    cursor: pointer;
-    outline: none;
-    text-decoration: underline;
-    color: #115e9c;
-    text-shadow: none;
-    border-radius: none;
-    padding: 0px 0px;
-    margin: none;
-    font-size: initial;
 }
 
 /* #Full-image-wrapper {
@@ -127,5 +114,9 @@
 
     .Links {
         justify-content: center;
+    }
+
+    .Project-points li {
+        margin: 0px 0px 0px 20px;
     }
 }
