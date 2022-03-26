@@ -35,7 +35,7 @@
 
 @media screen and (max-width: 960px) {
     #Navbar-logo {
-        font-size: var(--step-5);
+        font-size: 2rem;
         margin-left: 25px;
     }
 
