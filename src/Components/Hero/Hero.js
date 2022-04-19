@@ -25,7 +25,7 @@ const Hero = () => {
                         <span className="Shadow-span Hero-text"> Jeffery Xie. </span>
                     </p>
                     <p className="hero-p">I am a 
-                        <span className="Shadow-span Hero-text"> Front-End Web Developer </span>
+                        <span className="Shadow-span Hero-text"> Full-Stack Web Developer </span>
                         who is passionate about creating interactive web applications and positive user experiences.
                     </p>
                     <Button href={Resume} target="_blank" rel="noreferrer" variant="contained" className="flex" id="Resume">Resume</Button>
