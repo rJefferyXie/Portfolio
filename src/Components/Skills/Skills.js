@@ -5,14 +5,14 @@ import mongodb from "../../images/icons/mongodb.svg";
 import express from "../../images/icons/express.png";
 import react from "../../images/icons/react.svg";
 import nodejs from "../../images/icons/nodejs.svg";
-import javascript from "../../images/icons/javascript.svg";
-import html5 from "../../images/icons/html5.svg";
-import css3 from "../../images/icons/css3.svg";
 import python from "../../images/icons/python.svg";
 import java from "../../images/icons/java.svg";
-import api from "../../images/icons/api.svg";
 import git from "../../images/icons/git.svg";
-import vscode from "../../images/icons/vscode.svg";
+import nextJS from "../../images/icons/nextJS.svg";
+import firebase from "../../images/icons/firebase.png";
+import sass from "../../images/icons/sass.png";
+import typescript from "../../images/icons/typescript.png";
+import figma from "../../images/icons/figma.png";
 
 import { Card } from "@mui/material";
 
@@ -22,6 +22,22 @@ const Skills = () => {
             <h1>Skills and Technologies</h1>
             <div id="Skills-container" className="flex">
                 <div id="Skill-grid" className="grid page-container">
+                    <Card variant="outlined" className="skill-card flex-col">
+                        <img src={firebase} alt="Google Firebase" className="skill-icon"></img>
+                        <p className="tech-name">Firebase</p>
+                    </Card>
+                    <Card variant="outlined" className="skill-card flex-col">
+                        <img src={nextJS} alt="nextJS" className="skill-icon"></img>
+                        <p className="tech-name">NextJS</p>
+                    </Card>  
+                    <Card variant="outlined" className="skill-card flex-col">
+                        <img src={typescript} alt="TypeScript" className="skill-icon"></img>
+                        <p className="tech-name">TypeScript</p>
+                    </Card>   
+                    <Card variant="outlined" className="skill-card flex-col">
+                        <img src={sass} alt="SASS" className="skill-icon"></img>
+                        <p className="tech-name">SASS</p>
+                    </Card>   
                     <Card variant="outlined" className="skill-card flex-col">
                         <img src={mongodb} alt="MongoDB" className="skill-icon"></img>
                         <p className="tech-name">MongoDB</p>
@@ -39,29 +55,13 @@ const Skills = () => {
                         <p className="tech-name">NodeJS</p>
                     </Card> 
                     <Card variant="outlined" className="skill-card flex-col">
-                        <img src={api} alt="Rest APIs" className="skill-icon"></img>
-                        <p className="tech-name">Rest APIs</p>
+                        <img src={figma} alt="Figma" className="skill-icon"></img>
+                        <p className="tech-name">Figma</p>
                     </Card> 
                     <Card variant="outlined" className="skill-card flex-col">
                         <img src={git} alt="Git" className="skill-icon"></img>
                         <p className="tech-name">Git</p>
-                    </Card>  
-                    <Card variant="outlined" className="skill-card flex-col">
-                        <img src={javascript} alt="JavaScript" className="skill-icon"></img>
-                        <p className="tech-name">JavaScript</p>
-                    </Card>
-                    <Card variant="outlined" className="skill-card flex-col">
-                        <img src={html5} alt="HTML" className="skill-icon"></img>
-                        <p className="tech-name">HTML</p>
-                    </Card>
-                    <Card variant="outlined" className="skill-card flex-col">
-                        <img src={css3} alt="CSS" className="skill-icon"></img>
-                        <p className="tech-name">CSS</p>
-                    </Card>         
-                    <Card variant="outlined" className="skill-card flex-col">
-                        <img src={vscode} alt="VS Code" className="skill-icon"></img>
-                        <p className="tech-name">VSCode</p>
-                    </Card>
+                    </Card>      
                     <Card variant="outlined" className="skill-card flex-col">
                         <img src={python} alt="Python" className="skill-icon"></img>
                         <p className="tech-name">Python</p>
