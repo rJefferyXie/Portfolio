@@ -4,9 +4,13 @@ import pokepedia1 from "../../images/projects/pokepedia-1.png";
 import pokepedia2 from "../../images/projects/pokepedia-2.png";
 import pokepedia3 from "../../images/projects/pokepedia-3.png";
 
-import unite1 from "../../images/projects/unite-1.png";
-import unite2 from "../../images/projects/unite-2.png";
-import unite3 from "../../images/projects/unite-3.png";
+// import unite1 from "../../images/projects/unite-1.png";
+// import unite2 from "../../images/projects/unite-2.png";
+// import unite3 from "../../images/projects/unite-3.png";
+
+import prosper1 from "../../images/projects/prosper-1.png"
+import prosper2 from "../../images/projects/prosper-2.png"
+import prosper3 from "../../images/projects/prosper-3.png"
 
 import pathfinder1 from "../../images/projects/pathfinder-1.png";
 import pathfinder2 from "../../images/projects/pathfinder-2.png";
@@ -20,9 +24,9 @@ import catstronauts1 from "../../images/projects/catstronauts-1.png";
 import catstronauts2 from "../../images/projects/catstronauts-2.png";
 import catstronauts3 from "../../images/projects/catstronauts-3.png";
 
-import chess1 from "../../images/projects/chess-1.png";
-import chess2 from "../../images/projects/chess-2.png";
-import chess3 from "../../images/projects/chess-3.png";
+// import chess1 from "../../images/projects/chess-1.png";
+// import chess2 from "../../images/projects/chess-2.png";
+// import chess3 from "../../images/projects/chess-3.png";
 
 import webscraper1 from "../../images/projects/web-scraper-1.png";
 import webscraper2 from "../../images/projects/web-scraper-2.png";
@@ -38,7 +42,7 @@ const Projects = () => {
     const [image3, setImage3] = useState(pathfinder1);
     const [image4, setImage4] = useState(catstronauts1);
     const [image5, setImage5] = useState(webscraper1);
-    const [image6, setImage6] = useState(chess1);
+    const [image6, setImage6] = useState(prosper1);
 
     // const [fullImage, setFullImage] = useState("");
     // const [viewingFullImage, setViewingFullImage] = useState(false);
@@ -93,6 +97,36 @@ const Projects = () => {
                 <Button variant="outlined" onClickAway={() => setViewingFullImage(false)} style={{textShadow: "initial", margin: "8px auto", color: "white", borderColor: "white"}}>Exit Fullscreen</Button>
             </div> : null} */}
             <div id="Projects-container" className="flex-col">
+                <Card className="Project-card flex" variant="outlined">
+                    <div className="Project-image-container flex-col">
+                        <img src={image6} alt="Chess Engine Visualizer" className="Project-image"></img>
+                        <div className="Project-image-buttons flex">
+                            <Button variant="outlined" className="image-select-6" id="img-16" onClick={() => setSelectedImage("image-select-6", "img-16", prosper1)} style={{margin: "0px 4px", color: "#1a98ca", textShadow: "initial"}}>Image 1</Button>
+                            <Button variant="outlined" className="image-select-6" id="img-17" onClick={() => setSelectedImage("image-select-6", "img-17", prosper2)} style={{margin: "0px 4px", color: "#115e9c", textShadow: "initial"}}>Image 2</Button>
+                            <Button variant="outlined" className="image-select-6" id="img-18" onClick={() => setSelectedImage("image-select-6", "img-18", prosper3)} style={{margin: "0px 4px", color: "#115e9c", textShadow: "initial"}}>Image 3</Button>
+                        </div>
+                    </div>
+                    <div className="Project-info-container flex-col">
+                        <div className="Project-info flex-col">
+                            <h2 className="Project-name">PROSPER</h2>
+                            <h4 className="Project-header technologies">
+                                Technologies Used: <span>NextJS, TypeScript, SASS, Firebase, Redux</span>
+                            </h4>
+                            <h4 className="Project-header">Brief Description</h4>
+                            <p className="Project-description">A website application that promotes mental health and positivity through daily diary entries.</p>
+                            <h4 className="Project-header">Key Features</h4>
+                            <ul className="Project-points">
+                                <li>Developed the front-end using React, TypeScript, NextJS, and SASS.</li>
+                                <li>Designed and prototyped multiple variations of the user interface using Figma.</li>
+                                <li>Implemented user authentication and a real-time database using Google Firebase.</li>
+                            </ul>
+                        </div>
+                        <div className="Links flex">
+                            <Button variant="contained" href="https:/prosperal.web.app" target="_blank" rel="noreferrer" style={{margin: "0px 4px", backgroundColor: "#115e9c"}}>Demo</Button>
+                            <Button variant="contained" href="https://www.figma.com/proto/FIIN3V2XnwzVwYgpQldf1K/PROSPER?node-id=57%3A197&scaling=scale-down&page-id=0%3A1&starting-point-node-id=57%3A197" target="_blank" rel="noreferrer" style={{margin: "0px 4px", backgroundColor: "#115e9c"}}>Prototype</Button>
+                        </div>
+                    </div>
+                </Card>
                 <Card className="Project-card flex" variant="outlined">
                     <div className="Project-image-container flex-col">
                         <img src={image1} alt="Pokepedia" className="Project-image"></img>
@@ -271,7 +305,7 @@ const Projects = () => {
                         </div>
                     </div>
                 </Card>
-                <Card className="Project-card flex" variant="outlined">
+                {/* <Card className="Project-card flex" variant="outlined">
                     <div className="Project-image-container flex-col">
                         <img src={image6} alt="Chess Engine Visualizer" className="Project-image"></img>
                         <div className="Project-image-buttons flex">
@@ -299,7 +333,7 @@ const Projects = () => {
                             <Button variant="contained" href="https://github.com/rJefferyXie/Chess-Program-with-Minimax-Visualizer" target="_blank" rel="noreferrer" style={{margin: "0px 4px", backgroundColor: "#115e9c"}}>Code</Button>
                         </div>
                     </div>
-                </Card>
+                </Card> */}
             </div>
         </section>
     )
