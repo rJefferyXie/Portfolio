@@ -97,6 +97,36 @@ const Projects = () => {
                 <Button variant="outlined" onClickAway={() => setViewingFullImage(false)} style={{textShadow: "initial", margin: "8px auto", color: "white", borderColor: "white"}}>Exit Fullscreen</Button>
             </div> : null} */}
             <div id="Projects-container" className="flex-col">
+            <Card className="Project-card flex" variant="outlined">
+                    <div className="Project-image-container flex-col">
+                        <img src={image1} alt="Pokepedia" className="Project-image"></img>
+                        <div className="Project-image-buttons flex">
+                            <Button variant="outlined" className="image-select-1" id="img-1" onClick={() => setSelectedImage("image-select-1", "img-1", pokepedia1)} style={{margin: "0px 4px", color: "#1a98ca", textShadow: "initial"}}>Image 1</Button>
+                            <Button variant="outlined" className="image-select-1" id="img-2" onClick={() => setSelectedImage("image-select-1", "img-2", pokepedia2)} style={{margin: "0px 4px", color: "#115e9c", textShadow: "initial"}}>Image 2</Button>
+                            <Button variant="outlined" className="image-select-1" id="img-3" onClick={() => setSelectedImage("image-select-1", "img-3", pokepedia3)} style={{margin: "0px 4px", color: "#115e9c", textShadow: "initial"}}>Image 3</Button>
+                        </div>
+                    </div>
+                    <div className="Project-info-container flex-col">
+                        <div className="Project-info flex-col">
+                            <h2 className="Project-name">Poképedia</h2>
+                            <h4 className="Project-header technologies">
+                                Technologies Used: <span>MongoDB, Express, React, NodeJS, Redux</span>
+                            </h4>
+                            <h4 className="Project-header">Brief Description</h4>
+                            <p className="Project-description">A complete pokedex with a built-in team generator that displays information about every pokemon in a beautiful and responsive UI.</p>
+                            <h4 className="Project-header">Key Features</h4>
+                            <ul className="Project-points">
+                                <li>Website is hosted using Heroku and Netlify.</li>
+                                <li>Used MaterialUI to create user feedback components.</li>
+                                <li>Implemented state management with Redux and React-Redux.</li>
+                            </ul>
+                        </div>
+                        <div className="Links flex">
+                            <Button variant="contained" href="https://pokepediajx.netlify.app/" target="_blank" rel="noreferrer" style={{margin: "0px 4px", backgroundColor: "#115e9c"}}>Demo</Button>
+                            <Button variant="contained" href="https://github.com/rJefferyXie/Pokepedia-React" target="_blank" rel="noreferrer" style={{margin: "0px 4px", backgroundColor: "#115e9c"}}>Code</Button>
+                        </div>
+                    </div>
+                </Card>
                 <Card className="Project-card flex" variant="outlined">
                     <div className="Project-image-container flex-col">
                         <img src={image6} alt="Chess Engine Visualizer" className="Project-image"></img>
@@ -124,36 +154,6 @@ const Projects = () => {
                         <div className="Links flex">
                             <Button variant="contained" href="https:/prosperal.web.app" target="_blank" rel="noreferrer" style={{margin: "0px 4px", backgroundColor: "#115e9c"}}>Demo</Button>
                             <Button variant="contained" href="https://www.figma.com/proto/FIIN3V2XnwzVwYgpQldf1K/PROSPER?node-id=57%3A197&scaling=scale-down&page-id=0%3A1&starting-point-node-id=57%3A197" target="_blank" rel="noreferrer" style={{margin: "0px 4px", backgroundColor: "#115e9c"}}>Prototype</Button>
-                        </div>
-                    </div>
-                </Card>
-                <Card className="Project-card flex" variant="outlined">
-                    <div className="Project-image-container flex-col">
-                        <img src={image1} alt="Pokepedia" className="Project-image"></img>
-                        <div className="Project-image-buttons flex">
-                            <Button variant="outlined" className="image-select-1" id="img-1" onClick={() => setSelectedImage("image-select-1", "img-1", pokepedia1)} style={{margin: "0px 4px", color: "#1a98ca", textShadow: "initial"}}>Image 1</Button>
-                            <Button variant="outlined" className="image-select-1" id="img-2" onClick={() => setSelectedImage("image-select-1", "img-2", pokepedia2)} style={{margin: "0px 4px", color: "#115e9c", textShadow: "initial"}}>Image 2</Button>
-                            <Button variant="outlined" className="image-select-1" id="img-3" onClick={() => setSelectedImage("image-select-1", "img-3", pokepedia3)} style={{margin: "0px 4px", color: "#115e9c", textShadow: "initial"}}>Image 3</Button>
-                        </div>
-                    </div>
-                    <div className="Project-info-container flex-col">
-                        <div className="Project-info flex-col">
-                            <h2 className="Project-name">Poképedia</h2>
-                            <h4 className="Project-header technologies">
-                                Technologies Used: <span>MongoDB, Express, React, NodeJS, Redux</span>
-                            </h4>
-                            <h4 className="Project-header">Brief Description</h4>
-                            <p className="Project-description">A complete pokedex with a built-in team generator that displays information about every pokemon in a beautiful and responsive UI.</p>
-                            <h4 className="Project-header">Key Features</h4>
-                            <ul className="Project-points">
-                                <li>Website is hosted using Heroku and Netlify.</li>
-                                <li>Used MaterialUI to create user feedback components.</li>
-                                <li>Implemented state management with Redux and React-Redux.</li>
-                            </ul>
-                        </div>
-                        <div className="Links flex">
-                            <Button variant="contained" href="https://pokepediajx.netlify.app/" target="_blank" rel="noreferrer" style={{margin: "0px 4px", backgroundColor: "#115e9c"}}>Demo</Button>
-                            <Button variant="contained" href="https://github.com/rJefferyXie/Pokepedia-React" target="_blank" rel="noreferrer" style={{margin: "0px 4px", backgroundColor: "#115e9c"}}>Code</Button>
                         </div>
                     </div>
                 </Card>

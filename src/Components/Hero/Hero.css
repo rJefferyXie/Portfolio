@@ -10,7 +10,8 @@
 }
 
 #Hero-image {
-    width: min(90%, 540px);
+    height: min(90vh, min(90vw, 540px));
+    width: min(90vh, min(90vw, 540px));
 }
 
 .Intro-left {
