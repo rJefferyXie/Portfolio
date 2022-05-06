@@ -110,15 +110,15 @@ const Projects = () => {
                         <div className="Project-info flex-col">
                             <h2 className="Project-name">Poképedia</h2>
                             <h4 className="Project-header technologies">
-                                Technologies Used: <span>MongoDB, Express, React, NodeJS, Redux</span>
+                                Technologies Used: <span>MongoDB, Express, React, NodeJS, Redux, MUI, Heroku, Netlify</span>
                             </h4>
                             <h4 className="Project-header">Brief Description</h4>
                             <p className="Project-description">A complete pokedex with a built-in team generator that displays information about every pokemon in a beautiful and responsive UI.</p>
                             <h4 className="Project-header">Key Features</h4>
                             <ul className="Project-points">
-                                <li>Website is hosted using Heroku and Netlify.</li>
-                                <li>Used MaterialUI to create user feedback components.</li>
-                                <li>Implemented state management with Redux and React-Redux.</li>
+                                <li>Developed a loading screen with 300+ pokémon facts scraped from the Internet using Python, improving the user experience during long loading times.</li>
+                                <li>Implemented a unique interface with 10+ colour themes that adapt to the selected pokémon, helping to catch and retain user attention</li>
+                                <li>Implemented lazy-loading images and pagination to improve performance on pages with 200+ images.</li>
                             </ul>
                         </div>
                         <div className="Links flex">
@@ -140,15 +140,15 @@ const Projects = () => {
                         <div className="Project-info flex-col">
                             <h2 className="Project-name">PROSPER</h2>
                             <h4 className="Project-header technologies">
-                                Technologies Used: <span>NextJS, TypeScript, SASS, Firebase, Redux</span>
+                                Technologies Used: <span>NextJS, TypeScript, SCSS/SASS, Firebase, Redux, MUI, Figma</span>
                             </h4>
                             <h4 className="Project-header">Brief Description</h4>
                             <p className="Project-description">A website application that promotes mental health and positivity through daily diary entries.</p>
                             <h4 className="Project-header">Key Features</h4>
                             <ul className="Project-points">
-                                <li>Developed the front-end using React, TypeScript, NextJS, and SASS.</li>
-                                <li>Designed and prototyped multiple variations of the user interface using Figma.</li>
-                                <li>Implemented user authentication and a real-time database using Google Firebase.</li>
+                                <li>Create functional React components which were used across the application for multiple purposes, greatly reducing the size of the codebase and time spent developing.</li>
+                                <li>Implemented complex features such as website hosting, user authentication, and a real-time database using Google Firebase.</li>
+                                <li>Used Next.js to optimize images, improve search engine optimization, and reduce page loading times for a better user experience.</li>
                             </ul>
                         </div>
                         <div className="Links flex">
