@@ -12,7 +12,9 @@ import nextJS from "../../images/icons/nextJS.svg";
 import firebase from "../../images/icons/firebase.png";
 import sass from "../../images/icons/sass.png";
 import typescript from "../../images/icons/typescript.png";
-import figma from "../../images/icons/figma.png";
+import javascript from "../../images/icons/javascript.svg";
+import html from "../../images/icons/html5.svg";
+import css from "../../images/icons/css3.svg";
 
 import { Card } from "@mui/material";
 
@@ -28,7 +30,7 @@ const Skills = () => {
                     </Card>
                     <Card variant="outlined" className="skill-card flex-col">
                         <img src={nextJS} alt="nextJS" className="skill-icon"></img>
-                        <p className="tech-name">NextJS</p>
+                        <p className="tech-name">Next.js</p>
                     </Card>  
                     <Card variant="outlined" className="skill-card flex-col">
                         <img src={typescript} alt="TypeScript" className="skill-icon"></img>
@@ -48,15 +50,23 @@ const Skills = () => {
                     </Card>
                     <Card variant="outlined" className="skill-card flex-col">
                         <img src={react} alt="React" className="skill-icon"></img>
-                        <p className="tech-name">React</p>
+                        <p className="tech-name">React.js</p>
                     </Card>
                     <Card variant="outlined" className="skill-card flex-col">
                         <img src={nodejs} alt="Node" className="skill-icon"></img>
-                        <p className="tech-name">NodeJS</p>
+                        <p className="tech-name">Node.js</p>
                     </Card> 
                     <Card variant="outlined" className="skill-card flex-col">
-                        <img src={figma} alt="Figma" className="skill-icon"></img>
-                        <p className="tech-name">Figma</p>
+                        <img src={javascript} alt="JavaScript" className="skill-icon"></img>
+                        <p className="tech-name">JavaScript</p>
+                    </Card> 
+                    <Card variant="outlined" className="skill-card flex-col">
+                        <img src={html} alt="HTML5" className="skill-icon"></img>
+                        <p className="tech-name">HTML5</p>
+                    </Card> 
+                    <Card variant="outlined" className="skill-card flex-col">
+                        <img src={css} alt="CSS3" className="skill-icon"></img>
+                        <p className="tech-name">CSS3</p>
                     </Card> 
                     <Card variant="outlined" className="skill-card flex-col">
                         <img src={git} alt="Git" className="skill-icon"></img>
