@@ -28,7 +28,10 @@ const Hero = () => {
                         <span className="Shadow-span Hero-text"> Full-Stack Web Developer </span>
                         who is passionate about creating interactive web applications and positive user experiences.
                     </p>
-                    <Button href={Resume} target="_blank" rel="noreferrer" variant="contained" className="flex" id="Resume">Resume</Button>
+                    <div className="flex button-container">
+                        <Button href={Resume} target="_blank" rel="noreferrer" variant="contained" className="flex" id="Resume">Resume</Button>
+                        <Button href={'https://github.com/rJefferyXie'} target="_blank" rel="noreferrer" variant="contained" className="flex" id="Github">Github</Button>
+                    </div>
                 </div>
                 <img id="Hero-image" alt="" src={hero}></img>
                 <div className="Arrow-container flex">

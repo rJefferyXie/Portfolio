@@ -29,11 +29,24 @@
 
 #Resume {
     background-color: rgb(17, 94, 156);
-    margin-top: 1rem;
+    margin: 0 0.25rem;
 }
 
 #Resume:hover, #Resume:active, #Resume:focus {
     background-color: rgb(36, 111, 173);
+}
+
+#Github {
+    background-color: rgb(60, 60, 60);
+    margin: 0 0.25rem;
+}
+
+#Github:hover, #Github:active, #Github:focus {
+    background-color: rgb(81, 81, 81);
+}
+
+.button-container {
+    margin-top: 1rem;
 }
 
 .Arrow-container {
