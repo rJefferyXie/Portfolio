@@ -108,7 +108,7 @@ const Projects = () => {
                     </div>
                     <div className="Project-info-container flex-col">
                         <div className="Project-info flex-col">
-                            <h2 className="Project-name">Poképedia</h2>
+                            <h2 className="Project-name">Pokédex</h2>
                             <h4 className="Project-header technologies">
                                 Technologies Used: <span>MongoDB, Express, React, NodeJS, Redux, MUI, Heroku, Netlify</span>
                             </h4>
@@ -138,7 +138,7 @@ const Projects = () => {
                     </div>
                     <div className="Project-info-container flex-col">
                         <div className="Project-info flex-col">
-                            <h2 className="Project-name">PROSPER</h2>
+                            <h2 className="Project-name">Mental Positivity Website</h2>
                             <h4 className="Project-header technologies">
                                 Technologies Used: <span>NextJS, TypeScript, SCSS/SASS, Firebase, Redux, MUI, Figma</span>
                             </h4>
