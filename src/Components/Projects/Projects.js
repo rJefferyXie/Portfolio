@@ -1,5 +1,9 @@
 import './Projects.css';
 
+import pokemongame1 from '../../images/projects/pokemongame-1.png';
+import pokemongame2 from '../../images/projects/pokemongame-2.png';
+import pokemongame3 from '../../images/projects/pokemongame-3.png';
+
 import pokepedia1 from "../../images/projects/pokepedia-1.png";
 import pokepedia2 from "../../images/projects/pokepedia-2.png";
 import pokepedia3 from "../../images/projects/pokepedia-3.png";
@@ -28,9 +32,9 @@ import catstronauts3 from "../../images/projects/catstronauts-3.png";
 // import chess2 from "../../images/projects/chess-2.png";
 // import chess3 from "../../images/projects/chess-3.png";
 
-import webscraper1 from "../../images/projects/web-scraper-1.png";
-import webscraper2 from "../../images/projects/web-scraper-2.png";
-import webscraper3 from "../../images/projects/web-scraper-3.png";
+// import webscraper1 from "../../images/projects/web-scraper-1.png";
+// import webscraper2 from "../../images/projects/web-scraper-2.png";
+// import webscraper3 from "../../images/projects/web-scraper-3.png";
 
 import { Button, Card } from "@mui/material";
 
@@ -41,7 +45,7 @@ const Projects = () => {
     const [image2, setImage2] = useState(spotify1);
     const [image3, setImage3] = useState(pathfinder1);
     const [image4, setImage4] = useState(catstronauts1);
-    const [image5, setImage5] = useState(webscraper1);
+    const [image5, setImage5] = useState(pokemongame1);
     const [image6, setImage6] = useState(prosper1);
 
     // const [fullImage, setFullImage] = useState("");
@@ -97,7 +101,37 @@ const Projects = () => {
                 <Button variant="outlined" onClickAway={() => setViewingFullImage(false)} style={{textShadow: "initial", margin: "8px auto", color: "white", borderColor: "white"}}>Exit Fullscreen</Button>
             </div> : null} */}
             <div id="Projects-container" className="flex-col">
-            <Card className="Project-card flex" variant="outlined">
+                <Card className="Project-card flex" variant="outlined">
+                    <div className="Project-image-container flex-col">
+                        <img src={image5} alt="Pokepedia" className="Project-image"></img>
+                        <div className="Project-image-buttons flex">
+                            <Button variant="outlined" className="image-select-5" id="img-13" onClick={() => setSelectedImage("image-select-5", "img-13", pokemongame1)} style={{margin: "0px 4px", color: "#1a98ca", textShadow: "initial"}}>Image 1</Button>
+                            <Button variant="outlined" className="image-select-5" id="img-14" onClick={() => setSelectedImage("image-select-5", "img-14", pokemongame2)} style={{margin: "0px 4px", color: "#115e9c", textShadow: "initial"}}>Image 2</Button>
+                            <Button variant="outlined" className="image-select-5" id="img-15" onClick={() => setSelectedImage("image-select-5", "img-15", pokemongame3)} style={{margin: "0px 4px", color: "#115e9c", textShadow: "initial"}}>Image 3</Button>
+                        </div>
+                    </div>
+                    <div className="Project-info-container flex-col">
+                        <div className="Project-info flex-col">
+                            <h2 className="Project-name">Pokémon Game</h2>
+                            <h4 className="Project-header technologies">
+                                Technologies Used: <span>Firebase, React.js, Next.js, TypeScript, Redux, SCSS, Cypress, Framer Motion and MaterialUI</span>
+                            </h4>
+                            <h4 className="Project-header">Brief Description</h4>
+                            <p className="Project-description">A pokémon-themed incremental / idle game that was inspired by games like Cookie Clicker and Clicker Heroes.</p>
+                            <h4 className="Project-header">Key Features</h4>
+                            <ul className="Project-points">
+                                <li>Used Next.js Images to optimize images for all screen sizes, reducing the initial load time for the home page by up to 8 seconds and network payloads by ~22MB.</li>
+                                <li>Achieved a score of 85-100% for performance, accessibility, best practices, and SEO via <a className="Text-link" href="https://imgur.com/a/xAnkZQZ" target="_blank" rel="noreferrer">Google Lighthouse.</a></li>
+                                <li>Created several <a className="Text-link" href="https://www.youtube.com/watch?v=CF9hlIZCe4o&feature=youtu.be" target="_blank" rel="noreferrer">end-to-end tests</a> using Cypress to automatically test major components of the application.</li>
+                            </ul>
+                        </div>
+                        <div className="Links flex">
+                            <Button variant="contained" href="https://heropokemon.web.app/" target="_blank" rel="noreferrer" style={{margin: "0px 4px", backgroundColor: "#115e9c"}}>Demo</Button>
+                            <Button variant="contained" href="https://github.com/rJefferyXie/heropokemon" target="_blank" rel="noreferrer" style={{margin: "0px 4px", backgroundColor: "#115e9c"}}>Code</Button>
+                        </div>
+                    </div>
+                </Card>
+                <Card className="Project-card flex" variant="outlined">
                     <div className="Project-image-container flex-col">
                         <img src={image1} alt="Pokepedia" className="Project-image"></img>
                         <div className="Project-image-buttons flex">
@@ -117,7 +151,7 @@ const Projects = () => {
                             <h4 className="Project-header">Key Features</h4>
                             <ul className="Project-points">
                                 <li>Developed a loading screen with 300+ pokémon facts scraped from the Internet using Python, improving the user experience during long loading times.</li>
-                                <li>Implemented a unique interface with 10+ colour themes that adapt to the selected pokémon, helping to catch and retain user attention</li>
+                                <li>Implemented a unique interface with 10+ colour themes that adapt to the selected pokémon, helping to catch and retain user attention.</li>
                                 <li>Implemented lazy-loading images and pagination to improve performance on pages with 200+ images.</li>
                             </ul>
                         </div>
@@ -138,7 +172,7 @@ const Projects = () => {
                     </div>
                     <div className="Project-info-container flex-col">
                         <div className="Project-info flex-col">
-                            <h2 className="Project-name">Mental Positivity Website</h2>
+                            <h2 className="Project-name">PROSPER</h2>
                             <h4 className="Project-header technologies">
                                 Technologies Used: <span>NextJS, TypeScript, SCSS/SASS, Firebase, Redux, MUI, Figma</span>
                             </h4>
@@ -276,7 +310,7 @@ const Projects = () => {
                         </div>
                     </div>
                 </Card>
-                <Card className="Project-card flex" variant="outlined">
+                {/* <Card className="Project-card flex" variant="outlined">
                     <div className="Project-image-container flex-col">
                         <img src={image5} alt="Clothing Web Scraper" className="Project-image"></img>
                         <div className="Project-image-buttons flex">
@@ -304,7 +338,7 @@ const Projects = () => {
                             <Button variant="contained" href="https://github.com/rJefferyXie/Pathfinding-Visualizer" target="_blank" rel="noreferrer" style={{margin: "0px 4px", backgroundColor: "#115e9c"}}>Code</Button>
                         </div>
                     </div>
-                </Card>
+                </Card> */}
                 {/* <Card className="Project-card flex" variant="outlined">
                     <div className="Project-image-container flex-col">
                         <img src={image6} alt="Chess Engine Visualizer" className="Project-image"></img>

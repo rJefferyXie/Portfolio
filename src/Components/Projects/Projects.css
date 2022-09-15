@@ -77,6 +77,18 @@
     justify-content: flex-start;
 }
 
+.Text-link {
+    cursor: pointer;
+    outline: initial;
+    text-decoration: underline;
+    color: blue;
+    text-shadow: none;
+    font-size: initial;
+    border-radius: 0;
+    padding: 0 0;
+    width: fit-content;
+}
+
 /* #Full-image-wrapper {
     position: sticky;
     top: 50%;
