@@ -3,7 +3,7 @@ import './Footer.css';
 const Footer = () => {
     return (
         <section id="Footer" className="flex">
-            <p>© Jeffery Xie 2022</p>
+            <p>© Jeffery Xie 2024</p>
         </section>
     )
 }
