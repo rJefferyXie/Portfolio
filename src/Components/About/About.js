@@ -12,10 +12,10 @@ const About = () => {
         <section id="About" className="flex-col">
             <h1>About Me</h1>
             <div id="About-container" className="page-container flex-col">
-                <p className="about-text">I am a web developer who is always looking to explore new technologies and frameworks that interest me. 
+                <p className="about-text">I am a software developer who is always looking to explore new technologies and frameworks that interest me. 
                 I have experience creating and hosting full stack web applications using the MERN stack and with Google Firebase.
-                Being able to utilize my creativity and problem-solving skills is my favourite part about coding, which is why I chose web development. 
-                If you're looking for a web developer to add to your team, I'd love to hear from you!</p>
+                Being able to utilize my creativity and problem-solving skills is my favourite part about coding, which is why I chose software development. 
+                If you're looking for a software developer to add to your team, I'd love to hear from you!</p>
                 <div id="About-image-container" className="flex">
                     <div id="Work-container" className="flex-col">
                         <h3 className="about-header">I am...</h3>
